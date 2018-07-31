@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>React.JS 核心概念 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Virtual_DOM.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    介紹
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    React Native 基礎介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    開始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../setup/environment.html">
+            
+                <a href="../setup/environment.html">
+            
+                    
+                    1. 環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../setup/eslint.html">
+            
+                <a href="../setup/eslint.html">
+            
+                    
+                    1.1 ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../setup/start.html">
+            
+                <a href="../setup/start.html">
+            
+                    
+                    2. 專案環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    React.JS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="React_Intro.html">
+            
+                <a href="React_Intro.html">
+            
+                    
+                    React.JS 核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Virtual_DOM.html">
+            
+                <a href="Virtual_DOM.html">
+            
+                    
+                    關鍵的 Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="React_Data_Flow.html">
+            
+                <a href="React_Data_Flow.html">
+            
+                    
+                    資料與畫面的更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Component.html">
+            
+                <a href="Component.html">
+            
+                    
+                    React Component - 樂高式的 UI 組合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="JSX.html">
+            
+                <a href="JSX.html">
+            
+                    
+                    好直覺的 JSX 語法糖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Props.html">
+            
+                <a href="Props.html">
+            
+                    
+                    Props - 傳遞資料的媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="State.html">
+            
+                <a href="State.html">
+            
+                    
+                    State - 動態更新的資料載體
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="Input_Data_Flow.html">
+            
+                <a href="Input_Data_Flow.html">
+            
+                    
+                    Input 元件的資料流作法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="Lifecycle.html">
+            
+                <a href="Lifecycle.html">
+            
+                    
+                    Lifecycle - Component 的一生
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Layout 設計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../layout/style.html">
+            
+                <a href="../layout/style.html">
+            
+                    
+                    1. React Native Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../layout/flex.html">
+            
+                <a href="../layout/flex.html">
+            
+                    
+                    2. Flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../layout/view.html">
+            
+                <a href="../layout/view.html">
+            
+                    
+                    3. View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../layout/text.html">
+            
+                <a href="../layout/text.html">
+            
+                    
+                    4. Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../layout/image.html">
+            
+                <a href="../layout/image.html">
+            
+                    
+                    5. Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../layout/image.html">
+            
+                <a href="../layout/image.html">
+            
+                    
+                    6. Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../layout/button.html">
+            
+                <a href="../layout/button.html">
+            
+                    
+                    7. Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../layout/list.html">
+            
+                <a href="../layout/list.html">
+            
+                    
+                    8. List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../layout/list.html">
+            
+                <a href="../layout/list.html">
+            
+                    
+                    9. Fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    與後端交互
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../api/fetch.html">
+            
+                <a href="../api/fetch.html">
+            
+                    
+                    1. Fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >React.JS 核心概念</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="reactjs-&#x4ECB;&#x7D39;">React.JS &#x4ECB;&#x7D39;</h1>
+<h2 id="&#x5B9A;&#x7FA9;">&#x5B9A;&#x7FA9;</h2>
+<blockquote>
+<p>A JavaScript library for building user interfaces</p>
+</blockquote>
+<p>&#x69CB;&#x5EFA;&#x8DE8;&#x5E73;&#x53F0; UI &#x7684;&#x51FD;&#x5F0F;&#x5EAB;</p>
+<h2 id="&#x89D2;&#x8272;">&#x89D2;&#x8272;</h2>
+<blockquote>
+<p>&#x53EA;&#x8CA0;&#x8CAC;&#x8655;&#x7406; UI &#xFF0C;&#x4E5F;&#x5C31;&#x662F; MVC &#x4E2D;&#x7684; View</p>
+</blockquote>
+<ul>
+<li>React &#x672C;&#x8EAB;&#x4E26;&#x4E0D;&#x662F;&#x4E00;&#x500B;&#x5B8C;&#x6574;&#x7684;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x500B;&#x53EA;&#x8655;&#x7406; View &#x7684;&#x51FD;&#x5F0F;&#x5EAB;&#xFF0C;&#x63D0;&#x4F9B;&#x958B;&#x767C;&#x8005;&#x5B9A;&#x7FA9; UI &#x7D50;&#x69CB;&#xFF0C;&#x4E26;&#x6709;&#x4E00;&#x5957;&#x81EA;&#x52D5;&#x64CD;&#x4F5C;&#x66F4;&#x65B0; DOM &#x7684;&#x6A5F;&#x5236;</li>
+<li>React &#x662F;&#x4E00;&#x500B;&#x4E2D;&#x9593;&#x5A92;&#x4ECB;&#xFF0C;&#x9023;&#x7D50;&#x4E86; UI &#x7684;&#x5B9A;&#x7FA9;&#x5C64;&#x9762;&#x8207; DOM &#x7684;&#x5BE6;&#x9AD4;&#x5C64;&#x9762;</li>
+</ul>
+<h2 id="reconciler--renderer">Reconciler &amp; Renderer</h2>
+<blockquote>
+<p>&#x5EE3;&#x7FA9;&#x7684; React &#x53EF;&#x4EE5;&#x518D;&#x7D30;&#x5206;&#x70BA; Reconciler &#x548C; Renderer</p>
+</blockquote>
+<ul>
+<li>Reconciler&#xFF08;react&#xFF09;&#xFF1A;&#x5C07;&#x5B9A;&#x7FA9;&#x7684; React UI &#x7D50;&#x69CB;&#x8F49;&#x6210;&#x865B;&#x64EC;&#x7684;&#x7269;&#x4EF6;&#x6A39; Virtual DOM</li>
+<li>Renderer&#xFF08;react-native&#xFF09;&#xFF1A;&#x4EE5;&#x9019;&#x500B;&#x865B;&#x64EC;&#x7D50;&#x69CB;&#x4F5C;&#x70BA;&#x4F9D;&#x64DA;&#xFF0C;&#x7522;&#x751F;&#x51FA;&#x5C0D;&#x61C9;&#x7684;&#x5BE6;&#x969B; DOM</li>
+</ul>
+<h3 id="reconciler">Reconciler</h3>
+<blockquote>
+<p>UI &#x7D50;&#x69CB;&#x7684;&#x8A2D;&#x8A08;&#x5716;</p>
+</blockquote>
+<p>&#x900F;&#x904E; JavaScript ( JSX ) &#x5C0D; UI &#x7D50;&#x69CB;&#x9032;&#x884C;&#x5BA3;&#x544A;&#x5F0F;&#x7684;&#x5B9A;&#x7FA9;
+React &#x6703;&#x5C07;&#x7D50;&#x69CB;&#x81EA;&#x52D5;&#x8F49;&#x8B8A;&#x6210;&#x4E00;&#x4EFD;&#x865B;&#x64EC;&#x7684;&#x7269;&#x4EF6;&#x6A39; : Virtual DOM</p>
+<h3 id="renderer">Renderer</h3>
+<blockquote>
+<p>&#x5C0D;&#x61C9;&#x5E73;&#x53F0;&#x7684;&#x539F;&#x751F; UI &#x6E32;&#x67D3;&#x5DE5;&#x5177;</p>
+</blockquote>
+<ul>
+<li>react-dom</li>
+<li>react-native</li>
+<li>react-tv</li>
+<li>react-vr</li>
+<li>react-native-windows</li>
+</ul>
+<h2 id="learn-once-write-anywhere">Learn Once, Write Anywhere</h2>
+<blockquote>
+<p>Reconciler + Renderer = Learn Once, Write Anywhere</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Virtual_DOM.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 關鍵的 Virtual DOM">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React.JS 核心概念","level":"1.4.1","depth":2,"next":{"title":"關鍵的 Virtual DOM","level":"1.4.2","depth":2,"path":"react/Virtual_DOM.md","ref":"react/Virtual_DOM.md","articles":[]},"previous":{"title":"React.JS","level":"1.4","depth":1,"ref":"","articles":[{"title":"React.JS 核心概念","level":"1.4.1","depth":2,"path":"react/React_Intro.md","ref":"react/React_Intro.md","articles":[]},{"title":"關鍵的 Virtual DOM","level":"1.4.2","depth":2,"path":"react/Virtual_DOM.md","ref":"react/Virtual_DOM.md","articles":[]},{"title":"資料與畫面的更新流程","level":"1.4.3","depth":2,"path":"react/React_Data_Flow.md","ref":"react/React_Data_Flow.md","articles":[]},{"title":"React Component - 樂高式的 UI 組合","level":"1.4.4","depth":2,"path":"react/Component.md","ref":"react/Component.md","articles":[]},{"title":"好直覺的 JSX 語法糖","level":"1.4.5","depth":2,"path":"react/JSX.md","ref":"react/JSX.md","articles":[]},{"title":"Props - 傳遞資料的媒介","level":"1.4.6","depth":2,"path":"react/Props.md","ref":"react/Props.md","articles":[]},{"title":"State - 動態更新的資料載體","level":"1.4.7","depth":2,"path":"react/State.md","ref":"react/State.md","articles":[]},{"title":"Input 元件的資料流作法","level":"1.4.8","depth":2,"path":"react/Input_Data_Flow.md","ref":"react/Input_Data_Flow.md","articles":[]},{"title":"Lifecycle - Component 的一生","level":"1.4.9","depth":2,"path":"react/Lifecycle.md","ref":"react/Lifecycle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/React_Intro.md","mtime":"2018-03-04T09:32:43.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-05T02:06:53.241Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
