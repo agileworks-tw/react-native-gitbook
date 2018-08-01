@@ -33,7 +33,7 @@ $ react-native run-ios
 
 自行將原生模組資源加入原生專案
 
-- [手動設定參考方式](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
+- [手動設定參考方式: <https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking>](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
 
 ### 移除套件
 

@@ -11,7 +11,7 @@
 
 ## API
 
-[官方文件](https://facebook.github.io/react-native/docs/asyncstorage.html)
+[官方文件: <https://facebook.github.io/react-native/docs/asyncstorage.html>](https://facebook.github.io/react-native/docs/asyncstorage.html)
 
 - setItem
 - getItem
@@ -35,4 +35,4 @@ async function example() {
 
 ## Sample
 
-[AsyncStorage Sample](https://snack.expo.io/@dmoon/asyncstorage-sample)
+[AsyncStorage Sample: <https://snack.expo.io/@dmoon/asyncstorage-sample>](https://snack.expo.io/@dmoon/asyncstorage-sample)

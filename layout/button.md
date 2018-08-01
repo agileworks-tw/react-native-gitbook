@@ -1,25 +1,29 @@
 # TouchableOpacity
-React Natvie 當中拿來當作按鈕的元件
 
+React Native 當中拿來當作按鈕的元件
 
 ## Button
+
 - 0.38 版才開始支援
 - 只支援最低限度的客製化
   - title
   - color
 - iOS、Android 樣式不一樣
 
-![](https://facebook.github.io/react-native/img/buttonExample.png)
+![Button Example](https://facebook.github.io/react-native/img/buttonExample.png)
 
 使用範例:
-```
+
+```jsx
 <Button
   onPress={() => {}}
   title="Hello"
   color="#841584"
 />
 ```
-##  Touchable
+
+## Touchable
+
 - TouchableHighlight
   - 點擊後反黑
 - TouchableNativeFeedback
@@ -28,7 +32,8 @@ React Natvie 當中拿來當作按鈕的元件
   - 點擊後變透明
 
 點擊範圍
-```
+
+```js
 hitSlop = {
   top: 0,
   left: 100,

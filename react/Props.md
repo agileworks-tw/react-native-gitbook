@@ -35,7 +35,7 @@ class App extends Component {
 
 ## Prop 傳遞屬性資料
 
-> #### 練習： [Props Sample: MultiLine TextInput](https://snack.expo.io/@dmoon/props-sample:-multiline-textinput)
+> #### 練習： [Props Sample: MultiLine TextInput: <https://snack.expo.io/@dmoon/props-sample:-multiline-textinput>](https://snack.expo.io/@dmoon/props-sample:-multiline-textinput)
 
 ## 新增自定義 Component
 
@@ -61,7 +61,7 @@ class LotsOfGreetings extends Component {
 }
 ```
 
-> #### 練習： [Add Custom Components](https://snack.expo.io/@dmoon/add-custom-components)
+> #### 練習： [Add Custom Components: <https://snack.expo.io/@dmoon/add-custom-components>](https://snack.expo.io/@dmoon/add-custom-components)
 
 ## Component 封裝
 
@@ -99,7 +99,7 @@ Greeting.defaultProps = {
 
 ### PropType Validation ( prop 型別驗證 )
 
-[PropTypes Document](https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes)
+[PropTypes Document: <https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes>](https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes)
 
 ```jsx
 import PropTypes from 'prop-types';
@@ -117,4 +117,4 @@ class Greeting extends Component {
 }
 ```
 
-> #### 練習： [Add Custom Component with defaultProps and propTypes](https://snack.expo.io/@dmoon/add-custom-component-with-defaultprops-and-proptypes)
+> #### 練習： [Add Custom Component with defaultProps and propTypes: <https://snack.expo.io/@dmoon/add-custom-component-with-defaultprops-and-proptypes>](https://snack.expo.io/@dmoon/add-custom-component-with-defaultprops-and-proptypes)

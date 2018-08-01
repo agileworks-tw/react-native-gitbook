@@ -7,7 +7,7 @@
   - 調用 setState 修改資料後，該 Component 以及其包含的所有子孫 Component 都會跟著自動發起重繪，以更新 Virtual DOM Tree
   - setState 方法就是 Reconciliation 流程以及 Virtual DOM 重繪的發起者，使資料變更、引發重繪，一直到最後反應出實際 DOM 的更新結果
 
-> #### 練習： [State Sample](https://snack.expo.io/@dmoon/state-sample)
+> #### 練習： [State Sample: <https://snack.expo.io/@dmoon/state-sample>](https://snack.expo.io/@dmoon/state-sample)
 
 ## setState Sample
 
@@ -37,7 +37,7 @@ class App extends React.Component {
 }
 ```
 
-> #### 練習： [setState Sample](https://snack.expo.io/@dmoon/setstate-sample)
+> #### 練習： [setState Sample: <https://snack.expo.io/@dmoon/setstate-sample>](https://snack.expo.io/@dmoon/setstate-sample)
 
 ### Async setState Sample
 
@@ -74,4 +74,4 @@ class Counter extends React.Component {
 }
 ```
 
-> #### 練習： [Counter Sample](https://snack.expo.io/@dmoon/setstate-sample:-counter)
+> #### 練習： [Counter Sample: <https://snack.expo.io/@dmoon/setstate-sample:-counter>](https://snack.expo.io/@dmoon/setstate-sample:-counter)

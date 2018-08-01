@@ -35,7 +35,7 @@ class UncontrolledInputExample extends Component {
 }
 ```
 
-> #### 範例： [Uncontrolled Input](https://snack.expo.io/@dmoon/uncontrolled-input)
+> #### 範例： [Uncontrolled Input: <https://snack.expo.io/@dmoon/uncontrolled-input>](https://snack.expo.io/@dmoon/uncontrolled-input)
 
 ## Controlled Input
 
@@ -68,7 +68,7 @@ class ControlledInputExample extends Component {
 }
 ```
 
-> #### 範例： [Controlled Input](https://snack.expo.io/@dmoon/controlled-input)
+> #### 範例： [Controlled Input: <https://snack.expo.io/@dmoon/controlled-input>](https://snack.expo.io/@dmoon/controlled-input)
 
 ### 小試身手： BMI 計算機
 

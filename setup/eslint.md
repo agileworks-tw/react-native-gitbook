@@ -1,16 +1,18 @@
-# ESlint
+# ESLint
 
-```
+```bash
 npm install --save-dev babel-eslint eslint-config-airbnb-base eslint-plugin-react eslint-plugin-react-native
 ```
 
 ## init
-```
+
+```bash
 node_modules/.bin/eslint --init
 ```
 
 選擇 style
-```
+
+```bash
 ? How would you like to configure ESLint? Use a popular style guide
 ? Which style guide do you want to follow? Airbnb
 ? Do you use React? Yes
@@ -18,4 +20,5 @@ node_modules/.bin/eslint --init
 ```
 
 ## 延伸閱讀
+
 [Airbnb JavaScript Style Guide](https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md)

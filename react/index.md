@@ -10,5 +10,5 @@
 * [Props - 傳遞資料的媒介](Props.md)
 * [State - 動態更新的資料載體](State.md)
 * [Input 元件的資料流作法](Input_Data_Flow.md)
-* [Lifecycle - Component 的一生](Lifecycle.md)
+* [LifeCycle - Component 的一生](Lifecycle.md)
 * [參考資料](REFERENCE.md)

@@ -1,4 +1,5 @@
 # Style
+
 - 架構 Component 樣式的元素
 - style 等於是一個 props
 - 遵循 web 上的 css 命名
@@ -9,13 +10,13 @@
 - 普通元件不支援 transform
 
 ## StyleSheet 優點
-  - 提高程式質量
-    - 從 render 當中的抽離 inline-style 樣式，可以使代碼更清晰易懂
-    - 給樣式命名對於 Component 可以提高可讀性
-  - 提高性能
-    - 創建樣式表，後續可以通過 ID 來引用樣式，而不是每次都創建新的對象
-    - 使用 StyleSheet 新增 style object，可以把樣式變成 ID 往 child component 傳遞，提高效能
 
+- 提高程式質量
+  - 從 render 當中的抽離 inline-style 樣式，可以使代碼更清晰易懂
+  - 給樣式命名對於 Component 可以提高可讀性
+- 提高性能
+  - 創建樣式表，後續可以通過 ID 來引用樣式，而不是每次都創建新的對象
+  - 使用 StyleSheet 新增 style object，可以把樣式變成 ID 往 child component 傳遞，提高效能
 
 ### 傳入 Object
 
@@ -27,13 +28,16 @@
 ### 傳入 Array
 
 ```javascript
-const textStyle= [{
-  fontSize: 16,
-  color: '#ff0000'
-}, {
-  fontWeight: 'bold'
-}];
-<Text style={textStyle}>just red</Text>
+const textStyle = [
+  {
+    fontSize: 16,
+    color: '#ff0000'
+  },
+  {
+    fontWeight: 'bold'
+  }
+];
+<Text style={textStyle}>just red</Text>;
 ```
 
 根據變數切換 style
@@ -50,7 +54,6 @@ const isRed = true;
 
 <Text style={[{ fontWeight: 'bold' }, isRed ? redStyle : {}]}>just red</Text>
 ```
-
 
 ### 使用 StyleSheet
 
@@ -69,6 +72,7 @@ const styles = StyleSheet.create({
 ```
 
 ## 完整範例
+
 ```javascript
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -90,17 +94,16 @@ const styles = StyleSheet.create({
   bigblue: {
     color: 'blue',
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 30
   },
   red: {
-    color: 'red',
-  },
+    color: 'red'
+  }
 });
-
 ```
-![](./assets/style1.png)
-[expo 範例](https://snack.expo.io/r1TNAdlIf)
 
+![style sample](./assets/style1.png)
+[expo 範例](https://snack.expo.io/r1TNAdlIf)
 
 ## 進階使用
 
@@ -114,30 +117,31 @@ const styles = StyleSheet.create({
     fontSize: 16,
     ...Platform.select({
       ios: {
-        color: 'red',
+        color: 'red'
       },
       android: {
-        color: 'blue',
+        color: 'blue'
       }
-    }),
-  },
+    })
+  }
 });
-<Text style={styles.text}></Text>
+<Text style={styles.text} />;
 ```
 
 ### 根據不同裝置顯示 style 2
 
 F8APP 封裝 StyleSheet
+
 ```javascript
 export function create(styles) {
   const platformStyles = {};
-  Object.keys(styles).forEach((name) => {
-    let {ios, android, ...style} = {...styles[name]};
+  Object.keys(styles).forEach(name => {
+    let { ios, android, ...style } = { ...styles[name] };
     if (ios && Platform.OS === 'ios') {
-      style = {...style, ...ios};
+      style = { ...style, ...ios };
     }
     if (android && Platform.OS === 'android') {
-      style = {...style, ...android};
+      style = { ...style, ...android };
     }
     platformStyles[name] = style;
   });
@@ -146,23 +150,25 @@ export function create(styles) {
 ```
 
 #### 使用 F8StyleSheet
+
 ```javascript
-import F8StyleSheet from 'F8StyleSheet.js'
+import F8StyleSheet from 'F8StyleSheet.js';
 const styles = F8StyleSheet.create({
   text: {
     fontSize: 16,
     ios: {
-      color: 'red',
+      color: 'red'
     },
     android: {
-      color: 'blue',
+      color: 'blue'
     }
-  },
+  }
 });
-<Text style={styles.text}></Text>
+<Text style={styles.text} />;
 ```
 
 #### 動畫 Style
+
 ```javascript
 state = {
   fadeAnim: new Animated.Value(0),  0
@@ -174,7 +180,7 @@ Animated.timing(                  // Animate over time
     toValue: 1,                   // Animate to opacity: 1 (opaque)
     duration: 10000,              // Make it take a while
   }
-).start(); 
+).start();
 
 <Animated.View                 // Special animatable View
   style={{
@@ -186,4 +192,5 @@ Animated.timing(                  // Animate over time
 ```
 
 延伸閱讀
-- [解構賦值](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+- [解構賦值: <https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)

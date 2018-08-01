@@ -56,23 +56,23 @@ flex 後面的數字代表所佔的比例
 
 flex-start
 
-![](./assets/flex_start.png)
+![flex-start](./assets/flex_start.png)
 
 center
 
-![](./assets/flex_center.png)
+![flex-center](./assets/flex_center.png)
 
 flex-end
 
-![](./assets/flex_end.png)
+![flex-end](./assets/flex_end.png)
 
 space-around
 
-![](./assets/flex_around.png)
+![space-around](./assets/flex_around.png)
 
 space-between
 
-![](./assets/flex_between.png)
+![space-between](./assets/flex_between.png)
 
 **alignItems**
 可以決定其子元素沿着 `次軸` 的排列方式
@@ -83,7 +83,7 @@ space-between
 
 ## 使用範例
 
-```
+```js
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -120,13 +120,13 @@ export default class FlexSample extends Component {
 }
 ```
 
-![](./assets/flex_sample.png)
+![Flex Sample](./assets/flex_sample.png)
 
 ## 練習
 
-[flexboxfroggy](http://flexboxfroggy.com/) - 用遊戲學習 css 的 flexbox
+[FlexBox Froggy: <http://flexboxfroggy.com/>](http://flexboxfroggy.com/) - 用遊戲學習 css flexbox
 玩到第 12 關
 
 ## 延伸閱讀
 
-[yoga](https://github.com/facebook/yoga) - Facebook 實作的跨平台 Flex library
+[yoga: <https://github.com/facebook/yoga>](https://github.com/facebook/yoga) - Facebook 實作的跨平台 Flex library
