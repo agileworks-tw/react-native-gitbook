@@ -2,7 +2,13 @@
 
 > 組件的生命週期
 
-![LifeCycle](https://s3.amazonaws.com/media-p.slid.es/uploads/657937/images/3601681/reactjs_component_lifecycle_functions.png)
+- Old LifeCycle
+
+![Old LifeCycle](assets/old-lifecycle.png)
+
+- New LifeCycle
+
+![New LifeCycle](assets/new-lifecycle.jpeg)
 
 > #### 練習： [Lifecycle Sample: <https://snack.expo.io/@dmoon/lifecycle-sample>](https://snack.expo.io/@dmoon/lifecycle-sample)
 

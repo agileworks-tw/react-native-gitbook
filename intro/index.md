@@ -38,23 +38,30 @@
 ### 優點
 
 - 使用同一套專案 Code Base 即可達成跨平台 App 開發建置與維護。
+- 模組化及重用性 ( facebook 團隊程式碼重用率 85% )
 - 效能與使用體驗接近原生開發。
+- 和 Web 開發方法相似，前端開發者容易入門
 - 採用與 Web 前端相同的 REST API / JWT 存取後端資料服務。
 - 維護人員進入門檻低(熟悉 JavaScript 語言之開發人員)。
 - 可同步使用 iOS 與 Android 雙平台裝置進行測試與調校。
-- 開發時可以快速的更新 UI，不用重新編譯
-- 免送審更新程式之機制，Microsoft CodePush。
+- Hot Reloading 帶來良好開發體驗
+- Hot Deploy 可以免送審更新上架的 App，Microsoft CodePush。
+- 具備 Native Module 擴充性
 - 更新週期快速，每個月 release 一個版本，v0.40 以前每兩週 release 一個版本
 - [Product Pains: <https://react-native.canny.io/feature-requests/>](https://react-native.canny.io/feature-requests/) - 活躍的社群，讓社群投票表決 feature
-- 完整的文件
-- 豐富的社群生態資源
+- 完整的教學文件
+- React 社群生態圈的豐富資源
 
 ### 缺點
 
 - 開發環境對於電腦硬體需求較高。
 - 需熟悉了解 React
 
-## 適用場景 ToDo
+## 適用場景
+
+- 熟悉 React 或 Web 前端技術，想要嘗試手機應用開發
+- 跨平台開發需求
+- MVP 最小可行性產品試驗
 
 ## 線上案例 Showcase
 
