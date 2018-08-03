@@ -35,6 +35,8 @@
 
 ## 特色
 
+### 優點
+
 - 使用同一套專案 Code Base 即可達成跨平台 App 開發建置與維護。
 - 效能與使用體驗接近原生開發。
 - 採用與 Web 前端相同的 REST API / JWT 存取後端資料服務。
@@ -45,12 +47,7 @@
 - 更新週期快速，每個月 release 一個版本，v0.40 以前每兩週 release 一個版本
 - [Product Pains: <https://react-native.canny.io/feature-requests/>](https://react-native.canny.io/feature-requests/) - 活躍的社群，讓社群投票表決 feature
 - 完整的文件
-
-## 優缺點
-
-### 優點
-
--
+- 豐富的社群生態資源
 
 ### 缺點
 

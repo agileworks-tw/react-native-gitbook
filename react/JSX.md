@@ -50,7 +50,7 @@ React.createElement(
 
 - Boolean、Null、Undefined：什麼都不印，直接忽略
 
-> ####  練習： [JSX Expression Sample](https://snack.expo.io/@dmoon/jsx-expression-demo)
+> ####  練習： [JSX Expression Sample: <https://snack.expo.io/@dmoon/jsx-expression-demo>](https://snack.expo.io/@dmoon/jsx-expression-demo)
 
 ### 條件判斷式
 
