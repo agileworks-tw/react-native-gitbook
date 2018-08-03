@@ -39,5 +39,8 @@
 - 網路與 HTTP Request
   - [網路環境設定](Network/setup.md)
   - [fetch HTTP request](Network/fetch.md)
-- 打包
+- 生成 App 安裝檔
+  - [打包JS](release/index.md)ㄋ
+  - [編譯專案產生 App 安裝檔](release/generate-app.md)
+
 - [特定平台客製化](specifiec-platform/index.md)

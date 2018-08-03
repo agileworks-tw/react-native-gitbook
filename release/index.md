@@ -7,7 +7,7 @@
 
 ## 1. Static Bundle
 
-打包靜態 JS  檔案
+打包靜態 JS 檔案
 
 ### iOS
 
@@ -19,15 +19,4 @@ react-native bundle --entry-file index.ios.js --platform ios --dev false --bundl
 
 ```bash
 react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
-```
-
-## 2. 原生專案編譯
-
-### iOS
-
-
-### android
-
-```bash
-cd android && ./gradlew assembleRelease
 ```
