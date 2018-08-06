@@ -1,0 +1,118 @@
+{
+    "title": "React Natvie 課程講義 v20180806",
+    "footer_title": "限碩超科技有限公司內部教育訓練使用",
+    "description": "",
+    "author": "Marko Manninen",
+    "isbn": "",
+    "published": "07/27/2016",
+    "copyright": "創科資訊股份有限公司 版權所有",
+    "website": "http://trunk-studio.com",
+    "keywords": "",
+    "language": "tw",
+    "totalpages": 110,
+    "plugins": ["regexplace", "ga"],
+    "pluginsConfig": {
+        "_addcssjs": {
+            "js": ["//cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?config=TeX-AMS-MML_SVG",
+                   "//code.jquery.com/jquery-2.1.4.min.js",
+                   "media/jquery-mathjax-to-img.js?png=0&dlpng=0&dlsvg=0&scale=4&output=0"],
+            "css": []
+        },
+        "__addcssjs": {
+            "js": ["//code.jquery.com/jquery-2.1.4.min.js"],
+            "css": []
+        },
+        "ga": {
+            "token": ""
+        },
+        "regexplace": {
+            "removeFirstPartsInSectionNumber": true,
+            "substitutes": [
+                {"pattern": "<!-- pagebreak -->", "flags": "g", "substitute": "<div class=\"page-break\"></div>"},
+                {"pattern": "<!-- clear -->", "flags": "g", "substitute": "<div class=\"clear\"></div>"},
+                {"pattern": "<!-- nopb -->", "flags": "g", "substitute": "<div class=\"nopb\">"},
+                {"pattern": "<!-- endnopb -->", "flags": "g", "substitute": "</div>"},
+                {"pattern": "<!-- note -->", "flags": "g", "substitute": "<div class=\"note\">"},
+                {"pattern": "<!-- endnote -->", "flags": "g", "substitute": "</div>"},
+                {   
+                    "pattern": "!\\[(.*?)\\]\\((.*?)(?:\\s+\"(.*)\")?\\){0,}{caption=1([^\\}]*)}",
+                    "flags": "gmi", 
+                    "substitute": "<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $3 alt=\"$1\" title=\"$1\" href=\"$2\"><figcaption></figcaption></figure>", 
+                    "decode": true
+                },
+                {
+                    "pattern": "<img ([^>]*) {0,}\/{0,}> {0,}{caption=1([^\\}]*)}", 
+                    "flags": "g", 
+                    "substitute": "<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $2 $1><figcaption></figcaption></figure>", 
+                    "decode": true
+                },
+                {
+                    "pattern": "<img (.*)alt=\"([^\"]*)\"(.*) {0,1}\/{0,1}><figcaption></figcaption>", 
+                    "flags": "g", 
+                    "substitute": "<img$1alt=\"$2\"$3><figcaption><span>Picture _PAGE_LEVEL_._INDEX_</span>: $2</figcaption>",
+                    "store": {
+                        "substitute": "<a href=\"_PAGE_PATH_#fig_PAGE_LEVEL_._INDEX_\">Pic. _PAGE_LEVEL_._INDEX_</a> <span>$2</span>",
+                        "variable_name": "pictures"
+                    }
+                },
+                {
+                    "pattern": "<!-- cite author=\"(.*?)\" title=\"(.*?)\" date=\"(.*?)\" location=\"(.*?)\" type=\"(.*?)\"(.*?) -->",
+                    "flags": "g",
+                    "substitute": "<sup><a id=\"cite_INDEX_\" href=\"/references.html#ref_PAGE_LEVEL_._INDEX_\" title=\"$1: $2 $3\" type=\"$5\">_INDEX_</a></sup>",
+                    "store": {
+                        "substitute": "<span><a id=\"ref_PAGE_LEVEL_._INDEX_\" href=\"_PAGE_PATH_#cite_INDEX_\">_PAGE_LEVEL_._INDEX_.</a></span> <div type=\"$5\"><span>$1:</span> <span><a$6>$2</a></span> <span>$3</span> <span>$4</span></div>",
+                        "variable_name": "citations"
+                    }
+                },
+                {
+                    "pattern": "<p><img(.+?){style (.+?)}<\/p>",
+                    "flags": "g",
+                    "substitute": "<p style=\"$2\"><img$1</p>",
+                    "decode": true
+                }
+            ]
+        },
+        "": [
+            {"pattern": "<!-- pagewrapper -->", "flags": "g", "substitute": "<div id=\"_PAGE_PATH_\">"},
+            {"pattern": "<!-- endpagewrapper -->", "flags": "g", "substitute": "</div>"},
+            {
+                "pattern": "((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))",
+                "flags": "g",
+                "substitute": "$1",
+                "unreset": true,
+                "store": {
+                    "substitute": "{$1}",
+                    "unique": true,
+                    "lower": true,
+                    "variable_name": "uniquewords"
+                }
+            },
+            {
+                "pattern": "((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))",
+                "flags": "g",
+                "substitute": "$1",
+                "unreset": true,
+                "store": {
+                    "substitute": "{$1}",
+                    "variable_name": "allwords"
+                }
+            }
+        ],
+        "sitemap": {
+            "hostname": "http://trunk-studio.com"
+        }
+    },
+    "variables": {
+        "pictures": [],
+        "allwords": [],
+        "uniquewords": [],
+        "citations": []
+    },
+    "styles": {
+        "website": "media/website.css",
+        "ebook": "media/ebook.css",
+        "pdf": "media/ebook.css",
+        "mobi": "media/epub.css",
+        "epub": "media/epub.css"
+    }
+}
