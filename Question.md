@@ -1,15 +1,17 @@
+單選題，請選出最合適的選項？
+
 1.  React 可以開發什麼平台？
 
-    - a) web
-    - b) mobile app
-    - c) 任何可以執行 JS，且將原生 UI 元件封裝成 React component 的平台
-    - d)
+    - a) web App
+    - b) mobile App
+    - c) desktop App
+    - d) 任何可以執行 JS，且將原生 UI 元件封裝成 React component 的平台
 
 2.  React 的資料更新方式和以往 jQuery 有什麼不同？
 
     - a) React 使用萬物皆組件的概念
-    - b) React  提供了簡單做到單向綁定的方法
-    - c) 
+    - b) React 提供了簡單做到單向綁定的方法
+    - c) React 需要手動操作 DOM
     - d) 沒有差別
 
 3.  使用 Image component 顯示圖片時，需要給予哪些屬性資料才能正常顯示?
@@ -28,7 +30,7 @@
 
 5.  如何更新 React state?
 
-    - a)  修改 this.state 物件資料
+    - a) 修改 this.state 物件資料
     - b) 對 this.state 進行重新賦值
     - c) 使用 this.setState 方法更新 state 物件
     - d) 將 component  從畫面移除，重新渲染新狀態的 component
