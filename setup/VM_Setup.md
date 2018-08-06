@@ -44,6 +44,6 @@ $ adb shell am start -a android.settings.SETTINGS
 
 ## 延伸閱讀
 
-- 官方文件 [Android 開發環境 - for Mac: <http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment>](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
-- 官方文件 [Android 開發環境 - for Windows: <http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment>](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
-- [簡中環境教學: <http://reactnative.cn/docs/0.47/getting-started.html>](http://reactnative.cn/docs/0.47/getting-started.html)
+- 官方文件 Android 開發環境 - for Mac: [http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
+- 官方文件 Android 開發環境 - for Windows: [http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
+- 簡中環境教學: [http://reactnative.cn/docs/0.47/getting-started.html](http://reactnative.cn/docs/0.47/getting-started.html)

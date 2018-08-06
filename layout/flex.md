@@ -124,9 +124,9 @@ export default class FlexSample extends Component {
 
 ## 練習
 
-[FlexBox Froggy: <http://flexboxfroggy.com/>](http://flexboxfroggy.com/) - 用遊戲學習 css flexbox
+FlexBox Froggy: [http://flexboxfroggy.com/](http://flexboxfroggy.com/) - 用遊戲學習 css flexbox
 玩到第 12 關
 
 ## 延伸閱讀
 
-[yoga: <https://github.com/facebook/yoga>](https://github.com/facebook/yoga) - Facebook 實作的跨平台 Flex library
+yoga: [https://github.com/facebook/yoga](https://github.com/facebook/yoga) - Facebook 實作的跨平台 Flex library

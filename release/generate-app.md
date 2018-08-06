@@ -61,4 +61,4 @@ android {
 cd android && ./gradlew assembleRelease
 ```
 
-[參考文件：<https://facebook.github.io/react-native/docs/signed-apk-android>](https://facebook.github.io/react-native/docs/signed-apk-android)
+參考文件：[https://facebook.github.io/react-native/docs/signed-apk-android](https://facebook.github.io/react-native/docs/signed-apk-android)

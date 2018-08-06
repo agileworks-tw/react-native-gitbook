@@ -18,20 +18,20 @@
 
 WebView -> Hybrid -> Convert to Native -> Totally Native
 
-- [Ionic: <https://ionicframework.com/>](https://ionicframework.com/) - Cordova, AngularJS, Sass
+- Ionic: [https://ionicframework.com/](https://ionicframework.com/) - Cordova, AngularJS, Sass
   - 骨子裡還是網頁
   - 官方 market 有賣 theme、plugin
   - 適合有網頁開發底子，要簡單 MVP 的產品
-- [NativeScript: https://www.nativescript.org/](https://www.nativescript.org/) - Angular, TypeScript, JavaScript.
+- NativeScript: [https://www.nativescript.org/](https://www.nativescript.org/) - Angular, TypeScript, JavaScript.
   - 適合熟悉 Angular 的開發者
   - 底層也是使用 Native API
   - 也有官方的 Market
   - 可擴展現有 APP
   - Vue 版本 preview 中
-- [Xamarin: <https://www.xamarin.com/>](https://www.xamarin.com/) - C#
+- Xamarin: [https://www.xamarin.com/](https://www.xamarin.com/) - C#
   - 適合熟悉物件導向的程式語言開發者的垮平台解決方案
   - 分為社區版、專業版、企業版
-- [PhoneGap: <https://phonegap.com/>](https://phonegap.com/)- Html, CSS, JavaScript
+- PhoneGap: [https://phonegap.com/](https://phonegap.com/)- Html, CSS, JavaScript
 
 ## 特色
 
@@ -48,7 +48,7 @@
 - Hot Deploy 可以免送審更新上架的 App，Microsoft CodePush。
 - 具備 Native Module 擴充性
 - 更新週期快速，每個月 release 一個版本，v0.40 以前每兩週 release 一個版本
-- [Product Pains: <https://react-native.canny.io/feature-requests/>](https://react-native.canny.io/feature-requests/) - 活躍的社群，讓社群投票表決 feature
+- Product Pains: [https://react-native.canny.io/feature-requests/](https://react-native.canny.io/feature-requests/) - 活躍的社群，讓社群投票表決 feature
 - 完整的教學文件
 - React 社群生態圈的豐富資源
 
@@ -65,6 +65,6 @@
 
 ## 線上案例 Showcase
 
-- [官方頁面 ShowCase: <http://facebook.github.io/react-native/showcase.html>](http://facebook.github.io/react-native/showcase.html)
-- [中國 ShowCase: <http://reactnative.cn/cases.html>](http://reactnative.cn/cases.html)
+- 官方頁面 ShowCase: [http://facebook.github.io/react-native/showcase.html](http://facebook.github.io/react-native/showcase.html)
+- 中國 ShowCase: [http://reactnative.cn/cases.html](http://reactnative.cn/cases.html)
   
