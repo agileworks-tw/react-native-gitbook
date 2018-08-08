@@ -1,4 +1,3 @@
-# React Native 介紹
 
 ## React Native 是什麼？
 

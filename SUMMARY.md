@@ -1,21 +1,22 @@
-- React Native 介紹
+- [React Native 介紹](intro/readme.md)
   - [React Native 基礎介紹](intro/index.md)
-- React.JS 介紹
+- [React.JS 介紹](react/readme_1.md)
   - [React.JS 介紹](react/React_Intro.md)
   - [關鍵的 Virtual DOM](react/Virtual_DOM.md)
   - [資料與畫面的更新流程](react/React_Data_Flow.md)
-- React 教學
+
+- [React 教學](react/readme_2.md)
   - [Expo Snack 介紹](setup/expo-snack.md)
   - [React Component - 樂高式的 UI 組合](react/Component.md)
   - [好直覺的 JSX 語法糖](react/JSX.md)
   - [Props - 傳遞資料的媒介](react/Props.md)
   - [State - 動態更新的資料載體](react/State.md)
   - [Lifecycle - Component 的一生](react/Lifecycle.md)
-- React Native 組件練習教學
+- [React Native 組件練習教學](components/readme.md)
   - [常用組件使用範例](components/index.md)
   - [Input 組件的資料流管理](components/Input_Data_Flow.md)
   - [實戰練習 ToDo List](ToDoList/index.md)
-- 樣式與排版設計`
+- [樣式與排版設計](layout/readme.md)
   - [React Native Style](layout/style.md)
   - [Flex](layout/flex.md)
   - [View](layout/view.md)
@@ -24,28 +25,28 @@
   - [Button](layout/button.md)
   - [List](layout/list.md)
   - [ToDo List Style 練習](ToDoList/add-style.md)
-- 專案環境設置
+- [專案環境設置](setup/readme.md)
   - [一般環境設定](setup/environment.md)
   - [虛擬機環境教學](setup/VM_setup.md)
   - [ESLint](setup/eslint.md)
-  - [初始化專案](setup/Initialze_project.md)
-- 網路與 HTTP Request
+  - [初始化專案](setup/initialze_project.md)
+- [網路與 HTTP Request](Network/readme.md)
   - [網路環境設定](Network/setup.md)
   - [fetch HTTP request](Network/fetch.md)
   - [ToDo List RESTful API 練習](ToDoList/restful-api.md)
-- [第三方套件管理]
+- [第三方套件管理](third-party/index.md)
   - [JavaScript 套件管理方式](third-party/js-module.md)
   - [原生模組整合設定](third-party/native-module.md)
   - [整合套件練習](ToDoList/add-icon.md)
-- 多畫面管理 Navigation
+- [多畫面管理 Navigation](navigation/readme.md)
   - [介紹管理套件 RNRF](navigation/index.md)
   - [ToDoList 畫面管理練習](ToDoList/router.md)
   - [Tab 使用方式](navigation/tabss.md)
   - [Drawer 使用方式](navigation/drawer.md)
-- 儲存空間 AsyncStorage
+- [儲存空間 AsyncStorage](async-storage/index.md)
   - [AsyncStorage 介紹](async-storage/index.md)
   - [ToDo List 使用　AsyncStorage 練習](ToDoList/async-storage.md)
-- 生成 App 安裝檔
+- [生成 App 安裝檔](release/readme.md)
   - [打包JS](release/index.md)
   - [編譯專案產生 App 安裝檔](release/generate-app.md)
 - [特定平台客製化](specifiec-platform/index.md)
