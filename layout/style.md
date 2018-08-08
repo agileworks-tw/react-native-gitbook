@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
 ```
 
 ![style sample](./assets/style1.png)
-[expo 範例](https://snack.expo.io/r1TNAdlIf)
+expo 範例: [https://snack.expo.io/r1TNAdlIf](https://snack.expo.io/r1TNAdlIf)
 
 ## 進階使用
 
@@ -193,4 +193,4 @@ Animated.timing(                  // Animate over time
 
 延伸閱讀
 
-- [解構賦值: <https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- 解構賦值: [https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)

@@ -21,7 +21,9 @@ $ yarn add react-native-router-flux
 
 ### Router Stack
 
-![](./assets/route-stack.png)
+![route stack](./assets/route-stack.png)
+
+![route stack flow](./assets/route-stack-flow.png)
 
 ### RNRF Usage
 

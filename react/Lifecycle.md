@@ -2,9 +2,15 @@
 
 > 組件的生命週期
 
-![LifeCycle](https://s3.amazonaws.com/media-p.slid.es/uploads/657937/images/3601681/reactjs_component_lifecycle_functions.png)
+- Old LifeCycle
 
-> #### 練習： [Lifecycle Sample: <https://snack.expo.io/@dmoon/lifecycle-sample>](https://snack.expo.io/@dmoon/lifecycle-sample)
+![Old LifeCycle](assets/old-lifecycle.png)
+
+- New LifeCycle
+
+![New LifeCycle](assets/new-lifecycle.jpeg)
+
+> #### 練習： Lifecycle Sample: [https://snack.expo.io/@dmoon/lifecycle-sample](https://snack.expo.io/@dmoon/lifecycle-sample)
 
 ## render
 
@@ -19,7 +25,7 @@
 - 在 Component 的實際 UI 從畫面中移除之前，只會發生一次
 - 通常一些首次進入畫面後想發生的事情就適合在這裡呼叫，例如發送 HTTP Request 向後端 API 請求資料
 
-> #### 練習： [DidMount Sample: <https://snack.expo.io/@dmoon/didmount-sample>](https://snack.expo.io/@dmoon/didmount-sample)
+> #### 練習： DidMount Sample: [https://snack.expo.io/@dmoon/didmount-sample](https://snack.expo.io/@dmoon/didmount-sample)
 
 ## componentDidUpdate
 
