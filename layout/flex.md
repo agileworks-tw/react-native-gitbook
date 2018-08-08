@@ -6,7 +6,7 @@ Flexbox，就可以在不同屏幕尺寸上提供一致的佈局結構。
 
 flex 後面的數字代表所佔的比例
 
-```javascript
+```js
 <View style={{ flex: 1 }}>
   <View style={{ flex: 2, backgroundColor: 'skyblue' }} />
   <View style={{ flex: 1, backgroundColor: 'steelblue' }} />
@@ -121,6 +121,10 @@ export default class FlexSample extends Component {
 ```
 
 ![Flex Sample](./assets/flex_sample.png)
+
+Flex 線上範例:　[https://snack.expo.io/@dmoon/flex-sample](https://snack.expo.io/@dmoon/flex-sample)
+
+FlexDirection 線上範例：[https://snack.expo.io/@dmoon/flexdirection-sample](https://snack.expo.io/@dmoon/flexdirection-sample)
 
 ## 練習
 

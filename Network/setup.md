@@ -9,7 +9,7 @@
 <dict>
   <key>NSExceptionDomains</key>
   <dict>
-    <key>rn.fuyaode.me</key>
+    <key>hello.react.com</key>
     <dict>
       <key>NSExceptionAllowsInsecureHTTPLoads</key>
       <true/>

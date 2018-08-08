@@ -159,6 +159,10 @@ refreshControl={
 />
 ```
 
+## 線上範例
+
+FlatList 範例連結: [https://snack.expo.io/@dmoon/flatlist-sample](https://snack.expo.io/@dmoon/flatlist-sample)
+
 ## 延伸閱讀
 
 ListView: [https://facebook.github.io/react-native/releases/next/docs/listview.html](https://facebook.github.io/react-native/releases/next/docs/listview.html) - 舊版 ListView 使用方式 已過時

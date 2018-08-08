@@ -91,6 +91,10 @@ const styles = StyleSheet.create({
 })
 ```
 
+## 線上範例
+
+範例連結 [https://snack.expo.io/@dmoon/image-sample](https://snack.expo.io/@dmoon/image-sample)
+
 ## 延伸閱讀
 
 [Images Guide](https://facebook.github.io/react-native/docs/images.html)

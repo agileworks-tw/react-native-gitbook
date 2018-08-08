@@ -38,6 +38,8 @@ getData = page => {
 };
 ```
 
+線上範例： [https://snack.expo.io/@dmoon/fetch-example](https://snack.expo.io/@dmoon/fetch-example)
+
 ### post
 
 ```js

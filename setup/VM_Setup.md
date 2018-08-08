@@ -17,25 +17,69 @@
 [環境使用教學影片](https://youtu.be/2m7YyRycMhE)
 **請依照順序操作**
 
+### 啟動模擬器與虛擬機
+
 1.  開啟 Genymotion
 2.  開啟 Genymotion 當中的 Android 虛擬機 **Custom Phone - 7.1.0 - API 25 - 768x1280**，等待開機完成
-3.  在 `本機` 電腦執行命令提示字元執行指令
+3.  開啟 VirtualBox 當中的 ReactNative 虛擬機，待虛擬機出現 login 字樣後，開啟網頁 http://localhost:9083/ide.html
+
+    之後會透過這個頁面來進行虛擬機內的操作
+    ![React Native 虛擬機啟動就緒](assets/vm-ready.png)
+
+###  將模擬器連接到 ReactNative VM 環境
+
+> **此動作每次重啟  Genymotion 裝置或 ReactNative VM 都需要重做一次!!!**
+
+1.   在 `本機` 電腦執行指令(windows 電腦使用命令提示字元執行)
+
+> 本機有安裝 Android Studio 的請略過此步驟，並照下方 `安裝問題 adb 版本衝突`　的步驟處理，處理完後再回來從 `第2點　到 ReactNative 虛擬機網頁當中的 terminal 視窗輸入指令`　繼續步驟
 
 ```bash
-$ adb devices
-$ adb tcpip 5556
+# 進入下載的 adb 檔案所在目錄
+$ ./adb devices
+# 執行後會看到 android 模擬器的 ip 位址(可能每次都會不同)，請先將這個位址複製下來，待會會用到
+$ ./adb tcpip 5556
 ```
 
-4.  開啟 VirtualBox 當中的 ReactNative 虛擬機
-5.  ReactNative 虛擬機出現 login 字樣，開啟網頁 http://localhost:9083/ide.html
-6.  到 `ReactNative 虛擬機網頁當中的 terminal` 視窗輸入指令
+![](assets/adb-device-ip.png)
+
+2.  到 `ReactNative 虛擬機網頁當中的 terminal` 視窗輸入指令
 
 ```bash
 $ adb connect $ip:5556
 /* $ip 請自行替換為 adb devices 回傳的 Android 虛擬機 IP 例如: adb connect 192.168.57.101:5556 */
 $ adb devices
 /* 測試是否有連上 */
-$ adb shell am start -a android.settings.SETTINGS
+```
+
+![](assets/cloud9-terminal.png)
+
+## 安裝問題
+
+### adb 版本衝突 (adb server version doesn't match this client killing...)
+
+1.  打開 Genymotion
+2.  找到 設定 > adb
+3.  選擇 Use custom Android SDK tools
+4.  打開 Android Studio 找到 SDK Manager 中的 SDK  檔案路徑，複製下來
+
+    ![Android Studio SDK Manager](assets/android-studio-sdk-manager.png)
+    ![Android Studio SDK Path](assets/android-studio-sdk-path.png)
+
+5.  回到 Genymotion，在下面 Android SDK 輸入框中填入 Android Studio 的路徑
+
+    ![genymotion-setting.png](assets/genymotion-setting.png)
+
+6.  重啟 Genymotion，重啟後記得再依照前面的 `將模擬器連接到 ReactNative VM 環境` 步驟做一次
+
+由於您的本機已經有全域的 adb 了，不需要再使用教材的 adb 檔案來執行指令，
+直接使用全域的 adb 執行指令，指令如下
+
+```bash
+# 進入下載的 adb 檔案所在目錄
+$ adb devices
+# 執行後會看到 android 模擬器的 ip 位址(可能每次都會不同)，請先將這個位址複製下來，待會會用到
+$ adb tcpip 5556
 ```
 
 ## 常見問題
