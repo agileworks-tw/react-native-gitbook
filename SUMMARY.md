@@ -29,7 +29,7 @@
   - [一般環境設定](setup/environment.md)
   - [虛擬機環境教學](setup/VM_setup.md)
   - [ESLint](setup/eslint.md)
-  - [初始化專案](setup/Initialze_project.md)
+  - [初始化專案](setup/initialze_project.md)
 - [網路與 HTTP Request](Network/readme.md)
   - [網路環境設定](Network/setup.md)
   - [fetch HTTP request](Network/fetch.md)
