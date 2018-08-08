@@ -2,7 +2,7 @@
 
 ## 組件使用方式
 
-參考 [官方文件: <https://facebook.github.io/react-native/docs/getting-started>](https://facebook.github.io/react-native/docs/getting-started) 左側的 Components 列表，可以找到各組件提供的 props 、methods 與使用方式
+參考 官方文件: [https://facebook.github.io/react-native/docs/getting-started](https://facebook.github.io/react-native/docs/getting-started) 左側的 Components 列表，可以找到各組件提供的 props 、methods 與使用方式
 
 ## Image
 
@@ -18,7 +18,7 @@ props
 
   `require('圖片檔案路徑')` 或是 `{ url: '圖片網址' }`
 
-[使用範例: <https://snack.expo.io/@dmoon/image-sample>](https://snack.expo.io/@dmoon/image-sample)
+使用範例: [https://snack.expo.io/@dmoon/image-sample](https://snack.expo.io/@dmoon/image-sample)
 
 ## TouchableOpacity
 
@@ -30,7 +30,7 @@ props
 
 ## ScrollView
 
-[使用範例: <https://snack.expo.io/@dmoon/scrollview-sample>](https://snack.expo.io/@dmoon/scrollview-sample)
+使用範例: [https://snack.expo.io/@dmoon/scrollview-sample](https://snack.expo.io/@dmoon/scrollview-sample)
 
 ## FlatList
 
@@ -41,4 +41,4 @@ props
 - data
 - renderItem
 
-[使用範例: <https://snack.expo.io/@dmoon/flatlist-sample>](https://snack.expo.io/@dmoon/flatlist-sample)
+使用範例: [https://snack.expo.io/@dmoon/flatlist-sample](https://snack.expo.io/@dmoon/flatlist-sample)

@@ -1,25 +1,11 @@
-# 第三方套件管理
-
-## 套件管理工具
-
-- npm
-- yarn
-
-### 新增套件到專案
-
-```bash
-$ yarn add <Package_Name>@<Version>
-ex: yarn add lodash@4.17.0
-```
-
-### 包含原生模組的套件
+# 整合包含原生模組的套件
 
 需要將資源和原生程式碼加入到原生專案中
 
 1.  使用 react-native link 自動連結原生模組
 
 ```bash
-# 1. install package
+# 1. install package (沒有 yarn 也可以使用 npm 進行安裝，參考上個章節的指令)
 $ yarn add <Package_Name>
 
 # 2. link package
@@ -35,7 +21,7 @@ $ react-native run-ios
 
 - 手動設定參考方式: [https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
 
-### 移除套件
+## 移除套件
 
 ```bash
 # 若 link 過原生模組，需要先做 unlink
@@ -44,7 +30,3 @@ $ react-native unlink <Package_Name>
 # remove node_module
 $ yarn remove <Package_Name>
 ```
-
-### 整合套件練習
-
-1.  整合 icon 套件 react-native-vector-icons

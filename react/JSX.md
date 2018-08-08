@@ -50,7 +50,7 @@ React.createElement(
 
 - Boolean、Null、Undefined：什麼都不印，直接忽略
 
-> ####  練習： [JSX Expression Sample](https://snack.expo.io/@dmoon/jsx-expression-demo)
+> ####  練習： JSX Expression Sample: [https://snack.expo.io/@dmoon/jsx-expression-demo](https://snack.expo.io/@dmoon/jsx-expression-demo)
 
 ### 條件判斷式
 
@@ -104,7 +104,7 @@ render() {
 }
 ```
 
-> ####  練習： [JSX Conditional Render Sample: <https://snack.expo.io/@dmoon/jsx-conditional-render>](https://snack.expo.io/@dmoon/jsx-conditional-render)
+> ####  練習： JSX Conditional Render Sample [https://snack.expo.io/@dmoon/jsx-conditional-render](https://snack.expo.io/@dmoon/jsx-conditional-render)
 
 ## Inline Style
 
@@ -135,7 +135,7 @@ const styles = {
 </View>
 ```
 
-> ####  練習： [JSX Comment Sample: <https://snack.expo.io/@dmoon/jsx-comment-demo>](https://snack.expo.io/@dmoon/jsx-comment-demo)
+> ####  練習： JSX Comment Sample: [https://snack.expo.io/@dmoon/jsx-comment-demo](https://snack.expo.io/@dmoon/jsx-comment-demo)
 
 ## 迭代輸出顯示內容
 

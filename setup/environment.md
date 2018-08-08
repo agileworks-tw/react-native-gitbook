@@ -41,8 +41,8 @@ nvm install 8
 
 React Native 目前需要 Android Studio2.0 或更高版本。
 
-- 下載 [Windows Android Studio](https://developer.android.com/studio/index.html)
-- 安裝 Android Studio - [教學影片](https://developer.android.com/studio/install.html)
+- 下載 Windows Android Studio [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
+- 安裝 Android Studio - 教學影片 [https://developer.android.com/studio/install.html](https://developer.android.com/studio/install.html)
 - 安裝 SDK
   ![android-studio1](./assets/androidstudio1.png)
   SDK Platforms 選擇 **Google APIs** 、 **Android SDK Platform 23**
@@ -76,7 +76,7 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 ## Android 虛擬機
 
-- 註冊、下載 [genymotion](https://www.genymotion.com/pricing-and-licensing/)
+- 註冊、下載 genymotion [https://goo.gl/H4elWA](https://www.genymotion.com/pricing-and-licensing/)
 - 新增虛擬機
   ![genymotion1](./assets/genymotion1.jpg)
 
@@ -91,8 +91,8 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 ## Tools
 
 - VS code
-  - [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native)
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - React Native Tools: [https://goo.gl/FRhoCI](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native)
+  - ESLint [https://goo.gl/GonQQ9](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     - [設定 AirBnb EsLint](eslint.md)
 
 ## 免環境快速練習
@@ -108,4 +108,4 @@ npm start
 
 ### Expo snack
 
-[Expo Snack: <https://snack.expo.io/>](https://snack.expo.io/)
+Expo Snack: [https://snack.expo.io/](https://snack.expo.io/)

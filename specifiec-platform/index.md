@@ -3,7 +3,7 @@
 ## 多平台設計
 
 對應不同平台的 UI 佈局與樣式調整，也可以做到 JS 行為的不同
-[facebook F8 App 開發紀錄 - Designing an App for Multiple Platforms: <http://makeitopen.com/>](http://makeitopen.com/)
+facebook F8 App 開發紀錄 - Designing an App for Multiple Platforms: [http://makeitopen.com/](http://makeitopen.com/)
 
 ![header-diff](./assets/header-diff.png)
 
