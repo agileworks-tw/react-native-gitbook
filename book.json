@@ -10,6 +10,8 @@
     "keywords": "",
     "language": "tw",
     "totalpages": 110,
+    "hidepageheaders": [1],
+    "hidepagefooters": [1],
     "plugins": ["regexplace", "ga"],
     "pluginsConfig": {
         "_addcssjs": {
