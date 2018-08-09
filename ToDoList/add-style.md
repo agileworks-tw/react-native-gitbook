@@ -4,11 +4,11 @@
 
 ## 目前的畫面
 
-![Current](assets/todoList-before-styling.jpeg)
+<img src="assets/todoList-before-styling.jpeg" width="auto" height="500" />
 
 ## 預期調整成的樣子
 
-![Expect](assets/todoList-after-styling.jpeg)
+<img src="assets/todoList-after-styling.jpeg" width="auto" height="500" />
 
 ## 練習資源
 

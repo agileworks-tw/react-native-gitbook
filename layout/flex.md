@@ -13,7 +13,7 @@ flex 後面的數字代表所佔的比例
 </View>
 ```
 
-![](./assets/flex0.png)
+<img src="assets/flex0.png" width="auto" height="400" />
 
 **flexDirection**
 
@@ -31,7 +31,7 @@ flex 後面的數字代表所佔的比例
 </View>
 ```
 
-![](./assets/flex1.png)
+<img src="assets/flex1.png" width="auto" height="400" />
 
 使用 flexDirection 設定為水平排列
 
@@ -42,7 +42,7 @@ flex 後面的數字代表所佔的比例
 </View>
 ```
 
-![](./assets/flex2.png)
+<img src="assets/flex2.png" width="auto" height="400" />
 
 **justifyContent**
 
@@ -56,23 +56,23 @@ flex 後面的數字代表所佔的比例
 
 flex-start
 
-![flex-start](./assets/flex_start.png)
+<img src="assets/flex-start.png" width="auto" height="400" />
 
 center
 
-![flex-center](./assets/flex_center.png)
+<img src="assets/flex_center.png" width="auto" height="400" />
 
 flex-end
 
-![flex-end](./assets/flex_end.png)
+<img src="assets/flex_end.png" width="auto" height="400" />
 
 space-around
 
-![space-around](./assets/flex_around.png)
+<img src="assets/flex_around.png" width="auto" height="400" />
 
 space-between
 
-![space-between](./assets/flex_between.png)
+<img src="assets/flex_between.png" width="auto" height="400" />
 
 **alignItems**
 可以決定其子元素沿着 `次軸` 的排列方式
@@ -85,30 +85,57 @@ space-between
 
 ```js
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View,
-  Image,
-  Text,
-} from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 
 export default class FlexSample extends Component {
   render() {
     return (
-      <View style={{ flex: 1  }}>
+      <View style={{ flex: 1 }}>
         <View style={{ flex: 1, backgroundColor: 'blue' }}>
-          <View style={{  flex: 1, backgroundColor: 'red', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-end' }}>
-            <Text style={{ color: 'white'  }}>右上</Text>
+          <View
+            style={{
+              flex: 1,
+              backgroundColor: 'red',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-end'
+            }}
+          >
+            <Text style={{ color: 'white' }}>右上</Text>
           </View>
-          <View style={{  flex: 3, backgroundColor: 'green', justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ color: 'white'  }}>置中</Text>
+          <View
+            style={{
+              flex: 3,
+              backgroundColor: 'green',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <Text style={{ color: 'white' }}>置中</Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' , backgroundColor: 'blue' }}>
-          <View style={{  flex: 1, backgroundColor: 'blue', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'flex-start' }}>
-            <Text style={{ color: 'white'  }}>右上？</Text>
+        <View
+          style={{ flex: 1, flexDirection: 'row', backgroundColor: 'blue' }}
+        >
+          <View
+            style={{
+              flex: 1,
+              backgroundColor: 'blue',
+              flexDirection: 'row',
+              justifyContent: 'flex-end',
+              alignItems: 'flex-start'
+            }}
+          >
+            <Text style={{ color: 'white' }}>右上？</Text>
           </View>
-          <View style={{  flex: 1, backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-between'}}>
+          <View
+            style={{
+              flex: 1,
+              backgroundColor: 'yellow',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}
+          >
             <Text>1</Text>
             <Text>2</Text>
             <Text>3</Text>
@@ -120,7 +147,7 @@ export default class FlexSample extends Component {
 }
 ```
 
-![Flex Sample](./assets/flex_sample.png)
+<img src="assets/flex_sample.png" width="auto" height="400" />
 
 Flex 線上範例:　[https://snack.expo.io/@dmoon/flex-sample](https://snack.expo.io/@dmoon/flex-sample)
 

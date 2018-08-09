@@ -15,7 +15,6 @@
 
 - setItem
 - getItem
-- mergeItem
 - removeItem
 - clear
 

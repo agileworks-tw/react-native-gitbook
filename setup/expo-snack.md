@@ -26,8 +26,8 @@ Expo Snack : [https://snack.expo.io/](https://snack.expo.io/)
 
 用手機打開 Expo App 可以看到手機的 device id
 
-![expo-app-deviceId.jpg](assets/expo-app-deviceId.jpg)
+<img src="assets/expo-app-deviceId.jpg" width="auto" height="400" />
 
 填入之後下拉更新專案列表，可以看到線上的專案，點選後就會在手機上執行專案顯示畫面
 
-![expo-success.jpg](assets/expo-success.jpg)
+<img src="assets/expo-success.jpg" width="auto" height="400" />

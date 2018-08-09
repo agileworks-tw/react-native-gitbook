@@ -45,7 +45,8 @@ React 會將結構自動轉變成一份虛擬的物件樹 : Virtual DOM
 
 > 原生應用上的元素，提供 React 進行應用渲染
 
-![React-Entry](https://s3.amazonaws.com/media-p.slid.es/uploads/40413/images/4595067/comp_tree_v2a_200.png)
+![React-Entry]()
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/40413/images/4595067/comp_tree_v2a_200.png" width="auto" height="400" />
 
 ## Learn Once, Write Anywhere
 

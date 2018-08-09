@@ -47,7 +47,6 @@
 - Hot Deploy 可以免送審更新上架的 App，Microsoft CodePush。
 - 具備 Native Module 擴充性
 - 更新週期快速，每個月 release 一個版本，v0.40 以前每兩週 release 一個版本
-- Product Pains: [https://react-native.canny.io/feature-requests/](https://react-native.canny.io/feature-requests/) - 活躍的社群，讓社群投票表決 feature
 - 完整的教學文件
 - React 社群生態圈的豐富資源
 

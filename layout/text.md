@@ -85,4 +85,4 @@ const styles = StyleSheet.create({
 });
 ```
 
-![Text Sample](./assets/text_sample.png)
+<img src="assets/text_sample.png" width="auto" height="400" />

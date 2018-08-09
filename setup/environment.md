@@ -93,7 +93,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 - VS code
   - React Native Tools: [https://goo.gl/FRhoCI](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native)
   - ESLint [https://goo.gl/GonQQ9](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-    - [設定 AirBnb EsLint](eslint.md)
 
 ## 免環境快速練習
 
