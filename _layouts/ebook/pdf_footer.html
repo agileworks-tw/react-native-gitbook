@@ -1,5 +1,14 @@
 {% extends "./page.html" %}
 
 {% block body %}
-<div id="pdf-footer" class="pdf-footer"><span class="sub">{{ config.footer_title }}  </span> <span class="footer-pages-count"> {{ config.copyright }} / {{ page.num }}</span></div><script>if (({% for num in config.hidepagefooters %}{{ page.num }} == {{ num }} || {% endfor %}false)) document.getElementById('pdf-footer').style.display = 'none' </script>
+<div id="pdf-footer" class="pdf-footer">
+    <span class="sub">{{ config.footer_title }}  </span> 
+    
+    <span id="page-{{ page.num }}" class="footer-pages-count"></span>
+    
+</div>
+<script>
+document.getElementById("page-{{ page.num }}").innerHTML = "{{ config.copyright }} / " + ({{ page.num }} -1) ;
+if (({% for num in config.hidepagefooters %}{{ page.num }} == {{ num }} || {% endfor %}false)) document.getElementById('pdf-footer').style.display = 'none' 
+</script>
 {% endblock %}
