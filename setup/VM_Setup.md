@@ -35,10 +35,10 @@
 > 本機有安裝 Android Studio 的請略過此步驟，並照下方 `安裝問題 adb 版本衝突`　的步驟處理，處理完後再回來從 `第2點　到 ReactNative 虛擬機網頁當中的 terminal 視窗輸入指令`　繼續步驟
 
 ```bash
-# 進入下載的 adb 檔案所在目錄
-$ ./adb devices
+# 先進入下載的環境資源包中 adb 檔案所在的目錄，然後執行以下指令
+$ adb devices
 # 執行後會看到 android 模擬器的 ip 位址(可能每次都會不同)，請先將這個位址複製下來，待會會用到
-$ ./adb tcpip 5556
+$ adb tcpip 5556
 ```
 
 ![](assets/adb-device-ip.png)
@@ -57,6 +57,8 @@ $ adb devices
 ## 安裝問題
 
 ### adb 版本衝突 (adb server version doesn't match this client killing...)
+
+!!!  請先到 一般環境設定章節 確認 Android Studio 的 SDK Manager 所需的相關套件都有下載安裝 ！！！
 
 1.  打開 Genymotion
 2.  找到 設定 > adb
