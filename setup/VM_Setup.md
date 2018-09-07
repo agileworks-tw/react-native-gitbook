@@ -65,12 +65,13 @@ $ adb devices
 3.  選擇 Use custom Android SDK tools
 4.  打開 Android Studio 找到 SDK Manager 中的 SDK  檔案路徑，複製下來
 
-  ![Android Studio SDK Manager](assets/android-studio-sdk-manager.png)
-  ![Android Studio SDK Path](assets/android-studio-sdk-path.png)
+![Android Studio SDK Manager](assets/android-studio-sdk-manager.png)
+
+![Android Studio SDK Path](assets/android-studio-sdk-path.png)
 
 5.  回到 Genymotion，在下面 Android SDK 輸入框中填入 Android Studio 的路徑
 
-  ![genymotion-setting.png](assets/genymotion-setting.png)
+![genymotion-setting.png](assets/genymotion-setting.png)
 
 6.  重啟 Genymotion，重啟後記得再依照前面的 `將模擬器連接到 ReactNative VM 環境` 步驟做一次
 
