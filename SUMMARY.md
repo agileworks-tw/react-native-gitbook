@@ -27,7 +27,7 @@
   - [ToDo List Style 練習](ToDoList/add-style.md)
 - [專案環境設置](setup/readme.md)
   - [一般環境設定](setup/environment.md)
-  - [虛擬機環境教學](setup/VM_setup.md)
+  - [虛擬機環境教學](setup/VM_Setup.md)
   - [ESLint](setup/eslint.md)
   - [初始化專案](setup/initialize_project.md)
 - [網路與 HTTP Request](Network/readme.md)
