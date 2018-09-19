@@ -9,8 +9,8 @@
 ```bash
 cd ~/workspace
 git clone https://github.com/agileworks-tw/express-example
-git checkout practice/005002_answer
 cd express-example
+git checkout practice/005002_answer
 yarn
 ```
 

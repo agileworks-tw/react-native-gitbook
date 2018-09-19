@@ -10,6 +10,8 @@
 keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 ```
 
+產生的 keystore 檔案需放置到 `/android/app/`
+
 ### 2. Setting up gradle variables
 
 編輯 `~/.gradle/gradle.properties`，加入下面幾個變數  
