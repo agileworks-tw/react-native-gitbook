@@ -18,7 +18,7 @@ yarn
 
 ```bash
 cd ~/workspace
-git clone https://github.com/kyoyadmoon/RN_Todo_Sample
+git clone https://github.com/agileworks-tw/RN_Todo_Sample
 cd RN_Todo_Sample
 yarn
 ```
@@ -83,4 +83,4 @@ method: 'delete'
 
 ### 範例
 
-參考範例　[https://github.com/kyoyadmoon/RN_Todo_Sample/pull/1](https://github.com/kyoyadmoon/RN_Todo_Sample/pull/1)
+參考範例　[https://github.com/agileworks-tw/RN_Todo_Sample/pull/1](https://github.com/agileworks-tw/RN_Todo_Sample/pull/1)
