@@ -6,14 +6,14 @@
 
 ### 節
 
-練習章節：`主題`-`level`-`章`-`節`-lab-`short-name`
+練習章節：`主題`-`level`-`節`-lab-`short-name`
 
-內容章節：`主題`-`level`-`章`-`節`-article-`short-name`
+內容章節：`主題`-`level`-`節`-article-`short-name`
 
 
-練習章節 範例： `RN`-`basic`-`01`-`01`-lab-`rest-api`
+練習章節 範例： `RN`-`basic`-`01`-lab-`rest-api`
 
-內容章節 範例： `RN`-`basic`-`01`-`01`-article-`rest`
+內容章節 範例： `RN`-`basic`-`01`-article-`rest`
 
 
 
@@ -21,7 +21,11 @@
 
 ```
 RN-basic-01-network
-├── RN-basic-01-01-lab-rest-api
+├── 01-lab-rest-api-A
+│   ├── assets 章節所需附檔資料夾
+│   ├── readme.md 章節主要內容
+│   └── note.md 章節進行注意事項說明
+├── 02-lab-rest-api-B
 │   ├── assets 章節所需附檔資料夾
 │   ├── readme.md 章節主要內容
 │   └── note.md 章節進行注意事項說明
