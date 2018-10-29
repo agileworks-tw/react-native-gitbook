@@ -10,21 +10,14 @@ Redux 作者 Dan Abramov：
 
 **jQuery 資料操作同步範例**
 
-<div style="display: flex;flex: 1;">
-  <iframe style="flex: 1; height: 500px;" src="//jsfiddle.net/dmoon/87sakwed/1/embedded/js,html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-  <iframe style="flex: 1; height: 500px;" src="//jsfiddle.net/dmoon/87sakwed/1/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-</div>
-
-<br/>
+範例連結： [http://jsfiddle.net/dmoon/87sakwed/1](http://jsfiddle.net/dmoon/87sakwed/1)
 
 **React 資料操作同步範例**
 
 - React component 的 state 彼此獨立
 - 透過 props 傳遞的 callback func ，才能修改父 component 的 state
 
-<iframe width="100%" height="600" src="//jsfiddle.net/dmoon/22x2a7sq/26/embedded/js,html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-<iframe width="100%" height="600" src="//jsfiddle.net/dmoon/22x2a7sq/26/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+範例連結： [http://jsfiddle.net/dmoon/22x2a7sq/26](http://jsfiddle.net/dmoon/22x2a7sq/26)
 
 ## 結論：使用情境
 
