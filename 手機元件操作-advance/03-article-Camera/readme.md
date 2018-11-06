@@ -6,8 +6,6 @@
 
 react-native-image-picker [https://github.com/react-community/react-native-image-picker](https://github.com/react-community/react-native-image-picker)
 
-![](assets/2018-10-25-04-32-34.png)
-
 ## 整合
 
 ```bash
@@ -35,7 +33,7 @@ const options = {
  * The first arg is the options object for customization (it can also be null or omitted for default options),
  * The second arg is the callback which sends object: response (more info in the API Reference)
  */
-// 調用 Alert 詢問視窗
+// 調用 Alert 詢問視窗
 ImagePicker.showImagePicker(options, response => {
   console.log("Response = ", response);
 
@@ -49,7 +47,7 @@ ImagePicker.showImagePicker(options, response => {
     // You can also display the image using data:
     // const source = { uri: 'data:image/jpeg;base64,' + response.data };
 
-    // 成功取得圖片資訊，更新到 state 中
+    // 成功取得圖片資訊，更新到 state 中
     const source = { uri: response.uri };
     this.setState({
       avatarSource: source

@@ -47,4 +47,4 @@ adb reverse tcp:3000 tcp:3000
 
 ### 練習解答
 
-https://github.com/agileworks-tw/RN_Todo_Sample/pull/10
+[https://github.com/agileworks-tw/RN_Todo_Sample/pull/14](https://github.com/agileworks-tw/RN_Todo_Sample/pull/14)

@@ -35,20 +35,3 @@
 我們會在 Firebase 專案後台設定 iOS / Android 的發送推播權限。
 
 之後對 iOS / Android client 端進行 Firebase SDK 的整合，設定接收推播的權限和功能。
-
-
-
-Firebase Cloud Messaging (FCM) allows notifications to be displayed by your application remotely. To try and keep things simple and easier to understand, we have divided the React Native Firebase functionality clearly between data-only and notification messages.
-
-Remote notifications:
-
-- Used to display a visible notification on devices.
-- Contain an optional data payload (map of key / value pairs) for consumption by the app if it is in the foreground, or if the notification is subsequently opened. **If the notification is not opened, this data will never become available to the app.**
-- Intercepted by the Mobile Device's OS.
-- Delivered to the notification tray when the app is in the background or closed.
-
-|         | App in foreground | App in background                                            | App closed             |
-| ------- | ----------------- | ------------------------------------------------------------ | ---------------------- |
-| Android | onNotification    | onNotificationOpened                                         | getInitialNotification |
-| iOS     | onNotification    | `onNotificationDisplayed`triggered if `content_available ` set to `true` , `onNotificationOpened`triggered if the notification is tapped | getInitialNotification |
-

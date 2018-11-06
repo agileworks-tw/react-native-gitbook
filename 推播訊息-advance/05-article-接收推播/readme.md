@@ -67,3 +67,10 @@ componentWillUnmount() {
 }
 ```
 
+### Notification 事件
+
+|         | App in foreground | App in background                                            | App closed             |
+| ------- | ----------------- | ------------------------------------------------------------ | ---------------------- |
+| Android | onNotification    | onNotificationOpened                                         | getInitialNotification |
+| iOS     | onNotification    | `onNotificationDisplayed`triggered if `content_available ` set to `true` , `onNotificationOpened`triggered if the notification is tapped | getInitialNotification |
+
