@@ -3,9 +3,7 @@
 ## Token 認證方式
 
 以往 web 一般使用 session 搭配 cookie 和瀏覽器的機制來做身份驗證， 但當伺服器有做負載平衡時，session 可能在不同伺服器上，而驗證失敗。
-而 token 的機制
-
-Token 機制是一種無狀態的認證方式，與伺服器沒有耦合，伺服器在負載平衡架構下也可以進行驗證，可以支持跨域訪問。
+而 Token 機制是一種無狀態的認證方式，與伺服器沒有耦合，伺服器在負載平衡架構下也可以進行驗證，可以支持跨域訪問。
 
 ### 後端
 
@@ -68,7 +66,7 @@ JWT Registered Claim Names: [https://tools.ietf.org/html/rfc7519#section-4.1](h
 
 ```JSON
 {
-  "userId": 1,
+  "userId": 1,
   "name": "DMoon",
   "admin": true
 }

@@ -11,9 +11,13 @@
 
 1. 設定 App 原生專案的位置資訊權限
 2. 在 App 載入時透過 Geolocation API 取得位置資訊
-3. 將位置資訊的經緯度座標顯示在頁面上
+3. 新增一個顯示地圖按鈕，按下後開啟 Google 地圖連結，顯示當前位置
 
-![](assets/2018-10-25-14-22-35.png)
+<img src="assets/2018-11-05-00-23-01.png" width="auto" height="450px" />
+
+開啟後畫面
+
+<img src="assets/2018-11-05-00-34-02.png" width="auto" height="500px" />
 
 ## 練習前設置
 
@@ -45,6 +49,14 @@ adb reverse tcp:3000 tcp:3000
 ```
 
 ## 參考資料
+
+Google 地圖座標網址
+
+```js
+import { Linking } from "react-native";
+const url = `https://www.google.com.tw/maps?q=${latitude},${longitude}`;
+Linking.openURL(url);
+```
 
 ### 練習解答
 
