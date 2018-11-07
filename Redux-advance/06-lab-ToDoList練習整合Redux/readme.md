@@ -35,7 +35,7 @@ yarn
 cd ~/workspace
 git clone https://github.com/kyoyadmoon/RN_Todo_Sample
 cd RN_Todo_Sample
-git checkout todo-list-with-api-server
+git checkout feature/todo-list-with-api-server
 yarn
 ```
 

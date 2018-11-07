@@ -33,7 +33,7 @@
 cd ~/workspace
 git clone https://github.com/kyoyadmoon/RN_Todo_Sample
 cd RN_Todo_Sample
-git checkout geolocation
+git checkout feature/geolocation
 yarn
 ```
 

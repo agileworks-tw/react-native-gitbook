@@ -1,46 +1,17 @@
-# JWT 驗證練習
+# 熱部署練習
 
 難度： 進階
 
-目標： 整合 Firebase SDK，接收推播通知
+目標： 整合 react-native-codepush ，透過 appcenter-cli 更新 App 內容
 
 專案： [https://github.com/agileworks-tw/RN_Todo_Sample](https://github.com/agileworks-tw/RN_Todo_Sample)
 
 練習：
 
-1. SignIn 畫面加入 password 輸入欄位
-2. Sign in 時送出 `localhost:3000/login` API
-
-```js
-// type: 'POST'
-// body:
-{
-  "username": "rn-tw",
-  "password": "rn-tw"
-}
-```
-
-request 範例
-
-```js
-fetch("http://localhost:3000/login", {
-  method: "POST",
-  headers: {
-    Accept: "application/json",
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    username: "rn-tw",
-    password: "rn-tw"
-  })
-})
-  .then(res => res.json())
-  .then(result => console.log(result));
-```
-
-3. 透過請求的 response 確認是否登入成功 (res.success)，若成功則將 jwt token 寫入 AsyncStorage ， 連同 username 資料一併跳轉至 ToDoList 頁面
-
-4. 依照 JWT 標準將 ToDoList API 頁面的 get, create, delete API 加上 Authorization token，讓 API 可以成功運作
+1. 安裝 react-native-codepush
+2. 設定整合 App Center 應用程式
+3. 打包 production App，安裝到模擬器或手機上
+4. 修改樣式，並使用 appcenter-cli 更新，查看是否更新成功
 
 ## 練習前設置
 
@@ -96,4 +67,4 @@ adb reverse tcp:3000 tcp:3000
 
 ### 練習解答
 
-[https://github.com/agileworks-tw/RN_Todo_Sample/pull/6](https://github.com/agileworks-tw/RN_Todo_Sample/pull/6)
+[https://github.com/agileworks-tw/RN_Todo_Sample/pull/15](https://github.com/agileworks-tw/RN_Todo_Sample/pull/15)

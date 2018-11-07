@@ -27,7 +27,7 @@
 cd ~/workspace
 git clone https://github.com/kyoyadmoon/RN_Todo_Sample
 cd RN_Todo_Sample
-git checkout add-todo-list
+git checkout feature/async-storage
 yarn
 ```
 
