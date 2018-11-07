@@ -151,7 +151,7 @@ ws.onclose = e => {
 
 API: [https://goo.gl/tgXs0J](https://goo.gl/tgXs0J)  
 REST: [https://goo.gl/6rXqw](https://goo.gl/6rXqw)  
-RESTful API 设计指南: [https://goo.gl/KpKEvS](https://goo.gl/KpKEvS)
+RESTful API 設計指南: [https://goo.gl/KpKEvS](https://goo.gl/KpKEvS)
 
 - GET（SELECT）：從 server 取出資源（一項或多項）。
 - POST（CREATE）：在 server 新建一個資源。
