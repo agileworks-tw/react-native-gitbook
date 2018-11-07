@@ -16,13 +16,13 @@ props
 
 - source
 
-  `require('圖片檔案路徑')` 或是 `{ url: '圖片網址' }`
+  `require('圖片檔案路徑')` 或是 `{ url: '圖片網址' }`
 
 使用範例: [https://snack.expo.io/@dmoon/image-sample](https://snack.expo.io/@dmoon/image-sample)
 
 ## TouchableOpacity
 
-含有 onPress prop 的可按視圖(View)，可用來包裝想要加上按扭事件的組件
+含有 onPress prop 的可按視圖(View)，可用來包裝想要加上按扭事件的組件
 
 props
 
@@ -34,7 +34,7 @@ props
 
 ## FlatList
 
-顯示項目列表的組件，包含列表相關的 prop 功能 (無限捲動、下拉更新......)
+顯示項目列表的組件，包含列表相關的 prop 功能 (無限捲動、下拉更新......)
 
 props
 

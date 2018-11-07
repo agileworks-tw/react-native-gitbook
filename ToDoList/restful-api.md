@@ -57,9 +57,9 @@ adb reverse tcp:3000 tcp:3000
 新增、刪除與取得 ToDo 列表功能，後端都實作完成了  
 試著透過串接以下 API，讓 App 可以與後端互動完成 ToDoList
 
-1.  串接取得 ToDo 列表，綁定到 FlatList 資料來源
-2.  串接 create API，當發送成功時，將新的 ToDo 加入到 state 物件中
-3.  串接 delete API，當發送成功時，將欲刪除的 ToDo 從 state 物件中移除
+1.  串接取得 ToDo 列表，綁定到 FlatList 資料來源
+2.  串接 create API，當發送成功時，將新的 ToDo 加入到 state 物件中
+3.  串接 delete API，當發送成功時，將欲刪除的 ToDo 從 state 物件中移除
 
 ### API 規格
 
@@ -83,4 +83,4 @@ method: 'delete'
 
 ### 範例
 
-參考範例　[https://github.com/agileworks-tw/RN_Todo_Sample/pull/1](https://github.com/agileworks-tw/RN_Todo_Sample/pull/1)
+參考範例　[https://github.com/agileworks-tw/RN_Todo_Sample/pull/1](https://github.com/agileworks-tw/RN_Todo_Sample/pull/1)

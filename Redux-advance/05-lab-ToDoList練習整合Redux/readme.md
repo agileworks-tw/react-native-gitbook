@@ -1,4 +1,4 @@
-# ToDo List 練習整合 Redux
+# ToDo List 練習整合 Redux
 
 難度： 進階
 
@@ -9,11 +9,11 @@
 練習：
 將原本接好後端 API 的 ToDo List App 加上 Redux
 
-1. 安裝 redux, react-redux, remote-redux-devtools 套件
+1. 安裝 redux, react-redux, remote-redux-devtools 套件
 2. 建立 configureStore.js
 3. 將 Root Component 設為 Provider
 4. 加入 ToDoList 功能相關的 Action, Reducer，將相關的資料處理邏輯移到 reducer 中
-5.  使用 connect 方法將 ToDoList Component 連接 Redux Action 和 Store
+5.  使用 connect 方法將 ToDoList Component 連接 Redux Action 和 Store
 
 ## 練習前設置
 

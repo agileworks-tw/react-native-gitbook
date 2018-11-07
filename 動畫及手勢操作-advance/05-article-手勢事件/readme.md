@@ -1,4 +1,4 @@
-# 手勢追蹤 
+# 手勢追蹤 
 
 透過 React Native 的 `PanResponder` API 來識別使用者的手勢操作
 

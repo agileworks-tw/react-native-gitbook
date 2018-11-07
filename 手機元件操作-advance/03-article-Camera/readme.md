@@ -4,7 +4,7 @@
 
 ## 套件 react-native-image-picker
 
-react-native-image-picker [https://github.com/react-community/react-native-image-picker](https://github.com/react-community/react-native-image-picker)
+react-native-image-picker [https://github.com/react-community/react-native-image-picker](https://github.com/react-community/react-native-image-picker)
 
 ## 整合
 
@@ -62,7 +62,7 @@ ImagePicker.showImagePicker(options, response => {
 <Image source={this.state.avatarSource} style={styles.uploadAvatar} />
 ```
 
-### 直接開啟相機或  相簿
+### 直接開啟相機或  相簿
 
 ```js
 // Launch Camera:

@@ -2,9 +2,7 @@
 
 ## 使用方式
 
-首先決定想做  的動畫需要的樣式和變量值， 在初始化 state 時用 Animated.Value 初始化動畫值 ，並在樣式屬性綁定 state 中的 Animated value 變量值，當動畫執行時，變量值的變化會更新渲染綁定的樣式。
-
-
+首先要決定想做的動畫需要的樣式和變量值，在初始化 state 時用 Animated.Value 初始化動畫值 ，並在樣式屬性綁定 state 中的 Animated value 變量值，當動畫執行時，變量值的變化會更新渲染綁定的樣式。
 
 ## 動畫值
 
@@ -36,9 +34,9 @@ state = {
 
 
 
-##  動畫設定與執行
+##  動畫設定與執行
 
-使用 Animated API 設定動畫類型更新 Animated state 的值，再透過 start function 開始執行動畫。
+使用 Animated API 設定動畫類型更新 Animated state 的值，再透過 start function 開始執行動畫。
 
 淡入動畫範例
 

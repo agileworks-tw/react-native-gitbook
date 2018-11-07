@@ -2,15 +2,15 @@
 
 使用下列的 Animated 函數組合多個動畫，實現同時播放或依序播放的效果。
 
-- parallel (同時執行)
-- sequence (依序執行動畫，結束才開始下一個)
-- stagger  (依序延遲一段時間調用下一個動畫開始，不會等上一個動畫結束才開始計算延遲)
+- parallel (同時執行)
+- sequence (依序執行動畫，結束才開始下一個)
+- stagger  (依序延遲一段時間調用下一個動畫開始，不會等上一個動畫結束才開始計算延遲)
   - Stagger Animation Sample: [https://i.imgur.com/2iP68An.gifv](https://i.imgur.com/2iP68An.gifv)
 - delay    (延遲)
 
 範例
 
-```js
+```js
 // 依序執行陣列中的動畫
 Animated.sequence([
   // decay, then spring to start and twirl
