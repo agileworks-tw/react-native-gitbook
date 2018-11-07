@@ -45,7 +45,7 @@
   - [3. iOS 套件整合](推播訊息-advance/03-article-iOS套件整合/readme.md)
   - [4. Android 套件整合](推播訊息-advance/04-article-Android套件整合/readme.md)
   - [5. 接收推播](推播訊息-advance/05-article-接收推播/readme.md)
-  - [6. Lab: 更新動畫值](推播訊息-advance/06-lab-接收推播練習/readme.md)
+  - [6. Lab: 接收推播練習](推播訊息-advance/06-lab-接收推播練習/readme.md)
 - [多媒體操作](多媒體操作-advance/readme.md)
   - [1. 音檔錄製](多媒體操作-advance/01-article-音檔錄製/readme.md)
   - [2. 音檔播放](多媒體操作-advance/02-article-音檔播放/readme.md)
