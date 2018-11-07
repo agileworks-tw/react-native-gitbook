@@ -9,7 +9,7 @@ facebook F8 App 開發紀錄 - Designing an App for Multiple Platforms: [http://
 
 ![nav-diff](./assets/nav-diff.png)
 
-##  方法一：特定平台的副檔名
+##  方法一：特定平台的副檔名
 
 - MyComponent.ios.js
 - MyComponent.android.js

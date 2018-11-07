@@ -2,9 +2,9 @@
 
 ## android
 
-### 1. Generating a signing key
+### 1. Generating a signing key
 
-`my-release-key`, `my-key-alias` 可以換成專案 App 相關名稱
+`my-release-key`, `my-key-alias` 可以換成專案 App 相關名稱
 
 ```bash
 keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
@@ -18,7 +18,7 @@ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg
 變數名稱中的 MYAPP 可換成專案 App 名稱  
 變數的值則依照上一個指令執行時給的相關參數設定
 
-```text
+```text
 MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
 MYAPP_RELEASE_KEY_ALIAS=my-key-alias
 MYAPP_RELEASE_STORE_PASSWORD=*****
@@ -59,7 +59,7 @@ android {
 產生 release apk 指令
 
 ```bash
-# 專案目錄下
+# 專案目錄下
 cd android && ./gradlew assembleRelease
 ```
 

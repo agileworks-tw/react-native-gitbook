@@ -2,12 +2,12 @@
 
 ## 步驟
 
-1.  Static Bundle 打包 JS
+1.  Static Bundle 打包 JS
 2.  將原生專案編譯成 App
 
-## 1. Static Bundle
+## 1. Static Bundle
 
-打包靜態 JS 檔案
+打包靜態 JS 檔案
 
 ### iOS
 

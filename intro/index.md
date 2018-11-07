@@ -2,7 +2,7 @@
 ## React Native 是什麼？
 
 - 開發跨平台原生應用的 JavaScript 框架
-  - 用 JavaScript 開發  多個平台的原生應用
+  - 用 JavaScript 開發  多個平台的原生應用
 - 2013 年夏天 Facebook 內部駭客松的 project
 - 2015 年 1 月 React.js Conf 發表， 2015 年 5 月正式發佈，當時只有 IOS 版本，2015 年 9 月 Android 才正式支援
 - React 精神： Learn once, write anywhere:
@@ -15,7 +15,7 @@
 
 ## 開發方案比較
 
-WebView -> Hybrid -> Convert to Native -> Totally Native
+WebView -> Hybrid -> Convert to Native -> Totally Native
 
 - Ionic: [https://ionicframework.com/](https://ionicframework.com/) - Cordova, AngularJS, Sass
   - 骨子裡還是網頁

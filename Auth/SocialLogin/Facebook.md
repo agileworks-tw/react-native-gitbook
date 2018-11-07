@@ -18,7 +18,7 @@ react-native link react-native-fbsdk
 #### iOS
 
 確認有最新版本的 Xcode
-跟著 [Getting Started Guide: https://developers.facebook.com/docs/ios/getting-started/](https://developers.facebook.com/docs/ios/getting-started/)步驟整合 Facebook 應用程式 SDK
+跟著 [Getting Started Guide: https://developers.facebook.com/docs/ios/getting-started/](https://developers.facebook.com/docs/ios/getting-started/)步驟整合 Facebook 應用程式 SDK
 別忘了將 `FBSDKShareKit.framework` and `FBSDKLoginKit.framework` 加到原生專案中
 
 #### Android
@@ -76,7 +76,7 @@ private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
 
 ---
 
-`MainActivity.java`　檔案
+`MainActivity.java`　檔案
 覆寫 onActivityResult() method
 
 ```java
@@ -102,7 +102,7 @@ include ':react-native-fbsdk'
 project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
 ```
 
-接下來跟著  [Getting Started Guide: https://developers.facebook.com/docs/android/getting-started/](https://developers.facebook.com/docs/android/getting-started/) 的 Facebook 應用程式 SDK 整合步驟做（build.gradle 的部分可以跳過，react-native link 已經處理了），不要漏掉 `strings.xml`, `AndroidManifest.xml` 的相關設定
+接下來跟著  [Getting Started Guide: https://developers.facebook.com/docs/android/getting-started/](https://developers.facebook.com/docs/android/getting-started/) 的 Facebook 應用程式 SDK 整合步驟做（build.gradle 的部分可以跳過，react-native link 已經處理了），不要漏掉 `strings.xml`, `AndroidManifest.xml` 的相關設定
 
 ### 使用
 
@@ -125,7 +125,7 @@ export default class Login extends Component
               } else if (result.isCancelled) {
                 console.log("login is cancelled.");
               } else {
-                // 登入成功取得 AccessToken
+                // 登入成功取得 AccessToken
                 AccessToken.getCurrentAccessToken().then(
                   (data) => {
                     console.log(data.accessToken.toString())
@@ -193,6 +193,3 @@ const infoRequest = new GraphRequest(
 new GraphRequestManager().addRequest(infoRequest).start();
 ```
 
-##  整合範例
-
-範例網址： [https://github.com/agileworks-tw/RN_Todo_Sample/pull/5](https://github.com/agileworks-tw/RN_Todo_Sample/pull/5)

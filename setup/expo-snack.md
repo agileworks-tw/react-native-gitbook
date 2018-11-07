@@ -11,7 +11,7 @@ Expo Snack : [https://snack.expo.io/](https://snack.expo.io/)
 
 註冊帳號後可以儲存專案到服務帳號中進行管理
 
-需要在手機上安裝 Expo App
+需要在手機上安裝 Expo App
 
 - iOS: [https://goo.gl/Hh5jLm](https://goo.gl/Hh5jLm)
 - Android: [https://goo.gl/0Xfx08](https://goo.gl/0Xfx08)
@@ -24,10 +24,10 @@ Expo Snack : [https://snack.expo.io/](https://snack.expo.io/)
 
 ![assets/run-on-device.png](assets/run-on-device.png)
 
-用手機打開 Expo App 可以看到手機的 device id
+用手機打開 Expo App 可以看到手機的 device id
 
 <img src="assets/expo-app-deviceId.jpg" width="auto" height="400" />
 
-填入之後下拉更新專案列表，可以看到線上的專案，點選後就會在手機上執行專案顯示畫面
+填入之後下拉更新專案列表，可以看到線上的專案，點選後就會在手機上執行專案顯示畫面
 
 <img src="assets/expo-success.jpg" width="auto" height="400" />
