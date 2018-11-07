@@ -1,0 +1,384 @@
+/* image captions */
+
+figure {
+    margin: 1.0em 0px;
+    padding: 10px 0;
+    text-align: center;
+    page-break-inside: avoid;
+    display: block;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    clear: left;
+    margin: 1.0em 0 0 0;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+}
+
+.page .section1 p img {
+    margin-top: 10px;
+}
+
+.page .section1 table img.faded {
+    opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+figure#fig4.1.1 img,
+figure#fig4.1.2 img {
+    width: 10%;
+}
+
+/* hexagon, hexagram and six-spoked wheel */
+
+figure#fig2\.3\.10,
+figure#fig2\.3\.11,
+figure#fig2\.3\.12 {
+    float:left;
+    width: 33%;
+}
+
+figure#fig4\.2,
+figure#fig4\.3,
+figure#fig4\.4 {
+    float:left;
+    width: 31%;
+    margin: 0 5px;
+}
+
+/* bar codes */
+
+figure#fig13\.1,
+figure#fig13\.2,
+figure#fig13\.3 {
+    float:left;
+    width: 31%;
+    margin: 0 5px;
+}
+
+figure#fig13\.1 img,
+figure#fig13\.2 img,
+figure#fig13\.3 img {
+    width: 75%;
+}
+
+figure#fig13\.1:after {
+    content: "PDF";
+}
+figure#fig13\.2:after {
+    content: "EPUB";
+}
+figure#fig13\.3:after {
+    content: "MOBI";
+}
+
+figure#fig13\.1 figcaption,
+figure#fig13\.2 figcaption,
+figure#fig13\.3 figcaption {
+    display: none;
+}
+
+/* table headers */
+
+.page .section1 div#appendix1\.md table,
+.page .section1 div#appendix2\.md table {
+    font-size: 0.63em;
+}
+
+#page-book-details .details-readme section table thead,
+div#README\.md table thead {
+    display: none;
+}
+
+.page .section1 div#appendix2\.md table thead th:nth-child(5) {
+    width: 22%;
+}
+
+.page .section1 div#appendix2\.md table tbody td:nth-child(5) {
+    text-align: center;
+}
+
+.page .section1 div#appendix2\.md table img {
+    max-height: 33%;
+    height: 90px;
+}
+
+/* ul, ol list margin fix */
+
+.page .section1 ol,
+.page .section1 ul {
+    margin-bottom: 10px;
+}
+
+/* page break always after element on pdf/print definition */
+
+div.page-break {
+    page-break-inside: always;
+}
+
+div.page-break:before {
+    content: ' ';
+}
+
+.page .section1.toc  {
+    page-break-inside: always;
+}
+
+/* no page break inside element on pdf/print definition */
+
+div.nopb {
+    page-break-inside: avoid;
+}
+
+/* note blocks */
+
+div.note {
+    background: #FCF8E3 none repeat scroll 0% 0%;
+    color: #8A6D3B;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #DDD;
+    border-color: #FAEBCC;
+    page-break-inside: avoid;
+}
+
+div.note p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* quotes */
+
+.page .section1 blockquote {
+    margin: 0 0 0 5%;
+    font-style: italic;
+}
+
+/* google map page */
+
+div#map\.md p {
+    text-align: center;
+}
+
+div.googlemaps {
+    display: none;
+}
+
+/* credits page */
+
+.page .section1 ul.pictures {
+    margin-left: -30px;
+}
+
+.page .section1 ul.pictures li {
+    list-style: outside none none;
+}
+
+.page .section1 ul.pictures li a {
+    float: left;
+}
+
+.page .section1 ul.pictures li span {
+    display: block;
+    margin-left: 100px;
+}
+
+/* remove barcode pictures */
+
+.page .section1 ul.pictures li:nth-last-child(1),
+.page .section1 ul.pictures li:nth-last-child(2),
+.page .section1 ul.pictures li:nth-last-child(3) {
+    display: none;
+}
+
+/* citations */
+
+.page .section1 sup {
+    margin-left: -1px;
+    margin-right: 2px;
+}
+
+.page .section1 sup:before {
+    content: " ";
+}
+
+.page .section1 sup a {
+    font-size: 75%;
+}
+
+ul.citations,
+ul.references {
+    margin-left: -35px;
+}
+
+.page .section1 ul.citations,
+.page .section1 ul.references {
+    margin-left: -35px !important;
+}
+
+.page .section1 ul.citations li:nth-child(1) {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #BBB;
+}
+
+.page .section1 ul.citations li,
+.page .section1 ul.references li {
+    list-style: outside none none;
+}
+
+.page .section1 ul.citations li {
+    font-size: 80%;
+}
+
+.page .section1 ul.citations li > span:nth-child(1),
+.page .section1 ul.references li > span:nth-child(1) {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 70px
+}
+
+.page .section1 ul.citations li > span:nth-child(1) {
+    width: 50px
+}
+
+.page .section1 ul.references li div {
+    margin-left: 70px;
+}
+
+.page .section1 ul.citations li div {
+    margin-left: 50px;
+}
+
+.page .section1 a[href="#"],
+.page .section1 a[href="#"]:link,
+.page .section1 a[href="#"]:visited,
+.page .section1 a[href="#"]:hover,
+.page .section1 a[href="#"]:focus {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+    font-style: italic;
+}
+
+/* self referential footnotes */
+
+.page .section1 div[type="selfref"] a[href="#"],
+.page .section1 div[type="selfref"] a[href="#"]:link,
+.page .section1 div[type="selfref"] a[href="#"]:visited,
+.page .section1 div[type="selfref"] a[href="#"]:hover,
+.page .section1 div[type="selfref"] a[href="#"]:focus {
+    font-style: normal;
+}
+
+.page .section1 div[type="selfref"] span:nth-child(1) {
+    display: none;
+}
+
+/* part 1 and 2 image align */
+
+div#part1\/index\.md img,
+div#part2\/index\.md img {
+    margin-top: 10px;
+    max-width: 99%;
+}
+
+/* big number */
+
+div#part1\/pointline\.md pre {
+    text-align: center;
+    font-size: 0.84em;
+}
+
+/* kalevala quote */
+
+div#part1\/pointline\.md blockquote {
+    text-align: center;
+    border: 0;
+    margin: 0;
+}
+
+/* math image styles */
+
+.page .section1 p img.svg,
+.page .section1 p img.png {
+    margin-top: 0px;
+    margin-bottom: -2px;
+}
+
+.page .section1 p img.math {
+    vertical-align: middle;
+    height: auto; 
+    width: auto;
+    margin-top: -4px;
+    max-height: 15px;
+}
+.page .section1 p img.math.line1 {
+    margin-top: -7px;
+    max-height: 19px;
+}
+.page .section1 p img.math.line2 {
+    margin-top: -1px;
+    max-height: 30px;
+}
+
+/* backcover adjust */
+
+.page .section1 div#backcover\.md {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.page .section1 div#newitems\.md h3 {
+    page-break-before: always;
+}
+
+.page .section1 div#backcover\.md div.author {
+    margin-bottom: 20px;
+    margin-top: -100px
+}
+
+.page .section1 div#backcover\.md p:nth-child(1) br {
+    display: none;
+}
+
+ul.calibre_25 blockquote blockquote blockquote blockquote {
+    margin: -21px 0 0 21px;
+}
+
+ul.calibre_25 blockquote blockquote blockquote {
+    margin: -21px 0 0 -30px;
+}
+
+img.calibre_81 {
+    width: auto;
+    max-height: 200px;
+}
+
+p.calibre_ img {
+    width: 90%;
+    height: auto;
+}
+
+td:first-child span.calibre_1 {
+  white-space: nowrap;
+}
+
+td:nth-child(2) span.calibre_1 {
+  display: inline-block;
+}
+
+small {
+  padding: 3px;  
+}
+
