@@ -41,7 +41,7 @@
    - c) 新增 App 權限
    - d) 更換 App JS
 9. 下列哪個不是 JWT 內容的一部分?
-   - a) Header
+   - a) Payload
    - b) Signature
    - c) Authentication
    - d) Header
