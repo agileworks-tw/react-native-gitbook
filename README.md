@@ -2,8 +2,6 @@
 
 本教材由創科資訊研發團隊共同編撰。
 
-敏捷軟體開發培訓課程，預約請洽[創科資訊](http://trunk-studio.com/)。
-
 ## React Native 進階實戰班
 
 課程將會帶大家從 React 基礎觀念開始，透過豐富的範例及練習，逐漸熟悉 React Native 框架和開發方式，擁有跨平台應用的開發能力。
@@ -49,6 +47,8 @@ React Native 大幅降低開發 App 的門檻，使用 JavaScript 語言在開�
 建議安排 18 小時（分成 3 次上課，每次 6 小時，例如：上午 2 小時、下午 4 小時）
 
 ---
+
+敏捷軟體開發培訓課程，預約請洽[創科資訊](https://trunk-studio.com/)。
 
 ## 主題課程
 
@@ -97,20 +97,12 @@ React Native 大幅降低開發 App 的門檻，使用 JavaScript 語言在開�
 
 #### 黃駿朋 / Dmoon 
 
-擔任創科資訊 React Native 技術顧問與講師，同時也是 React Native Taiwan 社群發起人，具備多年的 React Native 實作與問題排除經驗，於 2016 年獲得 HackNTU 創新應用特優獎項。
-
 授課範圍：JavaScript、React、React Native
 
 #### 劉艾霖 / Alin 
 
-實務上的 Web Full Stack 開發經驗，熟悉 Java 以及 JavaScript 開發技術，專精於網站開發、架構設計與撰寫前後端自動化測試。是位全端工程師、後端工程師、測試開發工程師、企業內訓講師，具有 8 年軟體開發相關資歷，目前從事企業技術教學、技術顧問、軟體開發。
-
-曾於 JSDC 2016、Modern Web 2016、Testing Day 2017 等技術大會擔任講者，並於各大院校、資策會、IThome、企業內訓等機構擔任培訓師及 Workshop 講者。
-
 授課範圍：JavaScript、Git、Node.js、TDD、E2E Test、Swagger
 
 #### 張致寧 / Eddy
-
-畢業於台灣大學工管系，資擘公司創辦人，同時也是 ReactJS 台灣新聞網站、Joomla! 台灣社群網站站長，擅長 JavaScript、React、PHP、MySQL 與 Joomla! CMS，翻譯與著作有《Joomla! 3精彩解說》、《ReactJS零基礎開發入門》與《從ES6開始的JavaScript學習生活（電子書）》，獲得2017年iT邦幫忙鐵人賽優選。
 
 授課範圍：JavaScript、PHP、React、React Native
