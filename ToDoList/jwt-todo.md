@@ -2,7 +2,7 @@
 
 難度： 進階
 
-目標： 整合 Firebase SDK，接收推播通知
+目標： 加上登入功能與 JWT 驗證
 
 專案： [https://github.com/agileworks-tw/RN_Todo_Sample](https://github.com/agileworks-tw/RN_Todo_Sample)
 

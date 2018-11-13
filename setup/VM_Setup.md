@@ -6,11 +6,13 @@
 
 ## 前置準備
 
-- 安裝 Virtual Box
+- 安裝 `VirtualBox` 和 `Genymotion`
 
-- 安裝 Genymotion
+  > 從 ReactNative 教材中的作業系統資料夾中 (Mac / Windows)，Windows 的 Genymotion 安裝檔已經包含 VirtualBox
 
-- 將虛擬機檔案 `ReactNative.ova` 匯入 VirtualBox
+- 打開 VirtualBox ，匯入教材中的 Android 模擬器檔案 `HelloJS_Android7.1.0.ova`
+
+- 在 VirtualBox 中匯入教材中的另一個 ReactNative 環境虛擬機檔案 `ReactNative.ova`
 
 ## VM 環境設定
 
@@ -20,8 +22,8 @@
 ### 啟動模擬器與虛擬機
 
 1.  開啟 Genymotion
-2.  開啟 Genymotion 當中的 Android 虛擬機 **Custom Phone - 7.1.0 - API 25 - 768x1280**，等待開機完成
-3.  開啟 VirtualBox 當中的 ReactNative 虛擬機，待虛擬機出現 login 字樣後，開啟網頁 http://localhost:9083/ide.html
+2.  開啟 Genymotion 當中的 Android 模擬器 **Custom Phone - 7.1.0 - API 25 - 768x1280**，等待開機完成 (如果沒有看見 Android 模擬器請重開 Genymotion)
+3.  開啟 VirtualBox 當中的 ReactNative 虛擬機，待虛擬機出現 login 字樣後，表示已經成功啟動，這邊不需理會登入訊息，直接開啟虛擬機掛載的操作網頁介面 http://localhost:9083/ide.html
 
     之後會透過這個頁面來進行虛擬機內的操作
     ![React Native 虛擬機啟動就緒](assets/vm-ready.png)

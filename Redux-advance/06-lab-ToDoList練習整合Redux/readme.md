@@ -2,7 +2,7 @@
 
 難度： 進階
 
-目標： 在 React Native 透過 fetch 使用呼叫後端 API
+目標： 在 React Native 透過 fetch 使用呼叫後端 API，並透過 Redux 管理狀態
 
 專案： [https://github.com/agileworks-tw/RN_Todo_Sample](https://github.com/agileworks-tw/RN_Todo_Sample)
 
