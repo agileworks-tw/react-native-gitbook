@@ -62,6 +62,7 @@ adb reverse tcp:3000 tcp:3000
 ```
 
 完成後應該可以在 android 看到成功畫面
+
 ![todo-list-sample-ready](assets/todo-list-sample-ready.png)
 
 ## 參考資料

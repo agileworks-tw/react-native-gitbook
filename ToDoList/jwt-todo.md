@@ -52,7 +52,7 @@ fetch("http://localhost:3000/login", {
 cd ~/workspace
 git clone https://github.com/agileworks-tw/express-example
 cd express-example
-git checkout practice/005002_answer
+git checkout practice/jwt
 yarn
 ```
 
@@ -66,20 +66,16 @@ git checkout feature/async-storage
 yarn
 ```
 
-GitHub Repo: [https://github.com/agileworks-tw/express-example](https://github.com/agileworks-tw/express-example)
-
-切換到 branch `practice/jwt`
-
 ### 執行專案 （依照順序執行)
 
-Run API server
+#### Run API server
 
 ```bash
 cd ~/workspace/express-example
 npm start
 ```
 
-Run React Native ToDoList
+#### Run React Native ToDoList
 
 ```bash
 cd ~/workspace/RN_Todo_Sample

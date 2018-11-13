@@ -25,14 +25,23 @@ yarn
 
 ### 執行專案 （依照順序執行)
 
-Run API server
+#### 設定 VM 網路，新增連接埠轉送 3000 port
+
+![](assets/2018-11-13-23-20-23.png)
+
+![](assets/2018-11-13-23-20-05.png)
+
+#### Run API server
 
 ```bash
 cd ~/workspace/express-example
 npm start
 ```
 
-Run React Native ToDoList
+連線到 localhost:3000 頁面
+新增 user `React-Native`
+
+#### Run React Native ToDoList
 
 ```bash
 cd ~/workspace/RN_Todo_Sample

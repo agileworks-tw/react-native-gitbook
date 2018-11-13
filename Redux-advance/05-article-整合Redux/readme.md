@@ -13,11 +13,7 @@
 | **讀取數據**       | 從 Redux 獲取 state        | 從 props 獲取數據         |
 | **修改數據**       | 向 Redux 派發 actions      | 從 props 調用回調函數     |
 
-
-
 ## 整合
-
-
 
 ### 配置 Store 
 
