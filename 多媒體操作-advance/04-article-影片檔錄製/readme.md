@@ -172,31 +172,18 @@ A problem occurred configuring project ':react-native-sound'.
 
 ## 使用方式
 
-這個套件不是 Component，只提供封裝的方法調用
+#### 錄影
 
-使用範例
+使用 ref 調用 RNCamera 的 `recordAsync` function 進行相機錄製，並會在停止錄影後回傳影片資訊
 
 ```js
-import { AudioRecorder, AudioUtils } from 'react-native-audio';
-let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
-
-// 取得權限
-AudioRecorder.requestAuthorization().then((isAuthorised) => {
-
-});
-
-// 錄音參數設定
-AudioRecorder.prepareRecordingAtPath(audioPath, {
-  SampleRate: 22050,
-  Channels: 1,
-  AudioQuality: "Low",
-  AudioEncoding: "aac"
-});
-
-// 開始錄製
-AudioRecorder.startRecording();
-
-// 停止錄製(結束)
-AudioRecorder.stopRecording();
+const recordVideo = await this.camera.recordAsync();
 ```
 
+#### 停止錄影
+
+使用 ref 調用 RNCamera 的 `stopRecording`  停止錄製
+
+```js
+this.camera.stopRecording();
+```
