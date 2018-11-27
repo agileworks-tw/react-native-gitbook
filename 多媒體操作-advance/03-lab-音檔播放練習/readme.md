@@ -33,6 +33,13 @@ git checkout feature/add-todo-list
 yarn
 ```
 
+### 回復修改檔案狀態
+
+```bash
+git add .
+git reset --hard HEAD
+```
+
 ## 參考資料
 
 ### 套件使用範例

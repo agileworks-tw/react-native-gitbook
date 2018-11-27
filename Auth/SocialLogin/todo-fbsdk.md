@@ -28,11 +28,25 @@ git checkout feature/async-storage
 yarn
 ```
 
+> 如果想跳過套件整合設置
+> ````bash
+> git checkout 34a46e2
+> yarn
+> ````
+````
+
+### 回復修改檔案狀態
+
+​```bash
+git add .
+git reset --hard HEAD
+​```
+
 ### 執行專案 （依照順序執行)
 
 Run React Native ToDoList
 
-```bash
+​```bash
 cd ~/workspace/RN_Todo_Sample
 # 確認在 feature/add-todo-list branch
 # 這會執行 packager server
@@ -41,10 +55,11 @@ react-native start
 react-native run-android
 # 模擬器連接 3000 port
 adb reverse tcp:3000 tcp:3000
-```
+​```
 
 ## 參考資料
 
 ### 練習解答
 
 [https://github.com/agileworks-tw/RN_Todo_Sample/pull/5](https://github.com/agileworks-tw/RN_Todo_Sample/pull/5)
+````

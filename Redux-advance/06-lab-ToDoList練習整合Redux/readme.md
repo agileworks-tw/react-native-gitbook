@@ -39,6 +39,13 @@ git checkout feature/todo-list-with-api-server
 yarn
 ```
 
+### 回復修改檔案狀態
+
+```bash
+git add .
+git reset --hard HEAD
+```
+
 ### 執行專案 （依照順序執行)
 
 Run API server

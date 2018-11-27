@@ -28,6 +28,19 @@ git checkout feature/add-todo-list
 yarn
 ```
 
+> 如果想跳過套件整合設置
+> ````bash
+> git checkout 781e57d
+> yarn
+> ````
+
+### 回復修改檔案狀態
+
+```bash
+git add .
+git reset --hard HEAD
+```
+
 ### 執行專案 （依照順序執行)
 
 Run React Native ToDoList

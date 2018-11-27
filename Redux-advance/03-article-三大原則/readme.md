@@ -11,3 +11,4 @@
 ## Changes are made with pure functions
 
 對應不同的 action，使用純函數編寫 reducer 來執行 state 修改
+

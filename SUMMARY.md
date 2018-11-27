@@ -49,7 +49,7 @@
 - [多媒體操作](多媒體操作-advance/readme.md)
   - [1. 音檔錄製](多媒體操作-advance/01-article-音檔錄製/readme.md)
   - [2. 音檔播放](多媒體操作-advance/02-article-音檔播放/readme.md)
-  - [3. 音檔播放練習](多媒體操作-advance/03-lab-音檔播放練習/readme.md)
+  - [3. Lab: 音檔播放練習](多媒體操作-advance/03-lab-音檔播放練習/readme.md)
   - [4. 影片檔錄製](多媒體操作-advance/04-article-影片檔錄製/readme.md)
   - [5. 影片檔播放](多媒體操作-advance/05-article-影片檔播放/readme.md)
   - [6. Lab: 影片錄製播放練習](多媒體操作-advance/06-lab-影片錄製播放練習/readme.md)

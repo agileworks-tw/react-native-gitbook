@@ -8,9 +8,15 @@
 
 - 安裝 `VirtualBox` 和 `Genymotion`
 
-  > 從 ReactNative 教材中的作業系統資料夾中 (Mac / Windows)，Windows 的 Genymotion 安裝檔已經包含 VirtualBox
+  - Windows:
 
-- 打開 VirtualBox ，匯入教材中的 Android 模擬器檔案 `HelloJS_Android7.1.0.ova`
+    > 從 ReactNative 教材中的 `Windows` 資料夾中可以找到 Genymotion 安裝檔，Windows 的 Genymotion 安裝檔已經包含 VirtualBox
+
+  - macOS:
+
+    >  請到 [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) 下載安裝完 VirtualBox 後，再到 ReactNative 教材中的 `Mac` 資料夾中可以找到 Genymotion 安裝檔進行安裝
+
+- 打開 VirtualBox ，匯入教材中的 Android 模擬器檔案 `Custom Phone - 7.1.0 - API 25 - 768x1280_with_GApps`
 
 - 在 VirtualBox 中匯入教材中的另一個 ReactNative 環境虛擬機檔案 `ReactNative.ova`
 
@@ -32,18 +38,24 @@
 
 > **此動作每次重啟  Genymotion 裝置或 ReactNative VM 都需要重做一次!!!**
 
-1.   在 `本機` 電腦執行指令(windows 電腦使用命令提示字元執行)
+1. 取得 android 裝置IP位址
 
-> 本機有安裝 Android Studio 的請略過此步驟，並照下方 `安裝問題 adb 版本衝突`　的步驟處理，處理完後再回來從 `第2點　到 ReactNative 虛擬機網頁當中的 terminal 視窗輸入指令`　繼續步驟
+   ## 執行批次指令
 
-```bash
-# 先進入下載的環境資源包中 adb 檔案所在的目錄，然後執行以下指令
-$ adb devices
-# 執行後會看到 android 模擬器的 ip 位址(可能每次都會不同)，請先將這個位址複製下來，待會會用到
-$ adb tcpip 5556
-```
+   #### Windows
 
-![](assets/adb-device-ip.png)
+   打開 `ReactNative教材/Windows/android_device.bat` ，執行視窗會列出找到的 android 裝置 IP，將 IP 位址複製下來
+
+   #### macOS
+
+   打開 terminal
+
+   ```sh
+   cd ReactNative教材/Mac
+   ./android_device.sh
+   ```
+
+   將執行結果顯示的 IP 位址複製下來
 
 2.  到 `ReactNative 虛擬機網頁當中的 terminal` 視窗輸入指令
 
@@ -55,6 +67,8 @@ $ adb devices
 ```
 
 ![](assets/cloud9-terminal.png)
+
+
 
 ## 安裝問題
 
@@ -87,16 +101,48 @@ $ adb devices
 $ adb tcpip 5556
 ```
 
+
+
+## 手動取得 android 裝置位址
+
+在 `本機` 電腦執行指令(windows 電腦使用命令提示字元執行)
+
+> 本機有安裝 Android Studio 的請略過此步驟，並照下方 `安裝問題 adb 版本衝突`　的步驟處理，處理完後再回來從 `第2點　到 ReactNative 虛擬機網頁當中的 terminal 視窗輸入指令`　繼續步驟
+
+```bash
+# 先進入 Genymotion 附設的 adb 檔案所在的目錄
+## windows 參考路徑
+cd C:\Program Files\Genymobile\Genymotion\tools
+## macOS 參考路徑
+cd /Applications/Genymotion.app/Contents/MacOS/tools
+
+# 執行 adb 指令
+$ adb devices
+# 執行後會看到 android 模擬器的 ip 位址(可能每次都會不同)，請先將這個位址複製下來，待會會用到
+
+# 修改裝置 port 號到 5556
+$ adb tcpip 5556
+```
+
+![](/Users/DMOON/cases/online-course/books/react-native-advanced/setup/assets/adb-device-ip.png)
+
+
+
 ## 確認操作成功
 
 參考 https://youtu.be/2m7YyRycMhE?t=130 操作
 
+
+
 ## 常見問題
 
 [常見問題](http://bbs.reactnative.cn/topic/130/%E6%96%B0%E6%89%8B%E6%8F%90%E9%97%AE%E5%89%8D%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E7%9C%8B%E7%9C%8B-react-native%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
+
 
 ## 延伸閱讀
 
 - 官方文件 Android 開發環境 - for Mac: [http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
 - 官方文件 Android 開發環境 - for Windows: [http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment](http://facebook.github.io/react-native/releases/0.44/docs/getting-started.html#android-development-environment)
 - 簡中環境教學: [http://reactnative.cn/docs/0.47/getting-started.html](http://reactnative.cn/docs/0.47/getting-started.html)
+
