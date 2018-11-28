@@ -61,9 +61,10 @@
 
 ```bash
 $ adb connect $ip:5556
-/* $ip 請自行替換為 adb devices 回傳的 Android 虛擬機 IP 例如: adb connect 192.168.57.101:5556 */
+# $ip 請自行替換為 adb devices 回傳的 Android 虛擬機 IP 例如: adb connect 192.168.57.101:5556 
+
+# 測試是否有連上
 $ adb devices
-/* 測試是否有連上 */
 ```
 
 ![](assets/cloud9-terminal.png)
