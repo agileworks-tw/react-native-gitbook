@@ -1,5 +1,13 @@
 # AsyncStorage - App 儲存空間
 
+原本為 React Native 內建的函式庫，React Native 0.60 版本之後獨立成套件，[react-native-async-storage](https://github.com/react-native-community/async-storage)
+
+若是專案的 React Native 版本 >= 0.60，需要先安裝 [react-native-async-storage](https://github.com/react-native-community/async-storage)
+
+```bash
+yarn add @react-native-community/async-storage
+```
+
 ## AsyncStorage 介紹
 
 - 無加密
@@ -21,7 +29,9 @@
 ## 使用方法
 
 ```javascript
-import { AsyncStorage } from 'react-native';
+import { AsyncStorage } from 'react-native'; // react-native < 0.60
+import AsyncStorage from '@react-native-community/async-storage'; // react-native >= 0.60
+
 const APP_STORAGE_KEY = 'APP_STORAGE_KEY';
 async function example() {
   // 寫入資料到 AsyncStorage
