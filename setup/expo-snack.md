@@ -3,6 +3,8 @@
 線上的 React Native playground
 可以直接在線上建立專案，在網頁上的手機模擬器或是自己的手機上運行，並且包含 debug console 功能。
 
+> Expo v34.0 支援 web 預覽功能，可以將執行結果直接用 web 展示
+
 ## 網址
 
 Expo Snack : [https://snack.expo.io/](https://snack.expo.io/)
