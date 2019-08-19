@@ -19,17 +19,13 @@
 
 ```jsx
 class UncontrolledInputExample extends Component {
-  handleInputChange = event => {
-    console.log(event.target.value);
+  onChangeText = text => {
+    this.setState({ text });
   };
 
   render() {
     return (
-      <input
-        type="text"
-        defaultValue="hello"
-        onChange={this.handleInputChange}
-      />
+        <TextInput onChangeText={this.onChangeText} />
     );
   }
 }
