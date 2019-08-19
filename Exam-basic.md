@@ -5,7 +5,7 @@
     - a) web App
     - b) mobile App
     - c) desktop App
-    - d) 任何可以執行 JS，且將原生 UI 元件封裝成 React component 的平台
+    - d) 任何可以執行 JS，且將原生 UI 元件封裝成 React component 供 JS 調用的平台
 
 2.  React 的資料更新方式和以往 jQuery 有什麼不同？
 
