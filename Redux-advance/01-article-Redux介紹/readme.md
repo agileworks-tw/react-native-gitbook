@@ -1,10 +1,10 @@
 # Redux 介紹
 
-Redux 是 JavaScript 應用程式的狀態管理容器，可以理解成應用程式的資料狀態中心，提供可預測化的狀態管理 ，在 React 專案中可以處理 Component 之間的通訊。
+`Redux 是 JavaScript 應用程式的狀態管理容器`，可以理解成應用程式的資料狀態中心，提供可預測化的狀態管理 ，在 React 專案中可以處理 Component 之間的通訊。
 
 ## Redux 核心概念
 
-UI 是狀態資料的延伸，為了保持 Single Source of Truth，Redux 將需要共享的資料狀態保存在一個 Object 中統一管理，這個狀態中心稱為 Store，將這個 Store 作為  狀態的資料庫使用，管理所有需要共享的資料狀態，需要相關資料的 Component 可以透過接口向 store 綁定唯一的資料來源。
+UI 是狀態資料的延伸，為了保持 Single Source of Truth，Redux 將需要共享的資料狀態保存在一個 Object 中統一管理，這個狀態中心稱為 Store，將這個 Store 作為  狀態的資料庫使用，`管理所有需要共享的資料狀態`，需要相關資料的 Component 可以透過接口向 store 綁定唯一的資料來源。
 
 ## Time Travelling Debugger
 

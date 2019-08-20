@@ -12,7 +12,7 @@
 ```js
 getData = async page => {
   try {
-    let response = await fetch(`http://rn.fuyaode.me/users/1`);
+    let response = await fetch(`https://facebook.github.io/react-native/movies.json`);
     let responseJson = await response.json();
     console.log(responseJson);
     this.setState({
@@ -27,7 +27,7 @@ getData = async page => {
 
 ```js
 getData = page => {
-  return fetch('http://rn.fuyaode.me/users/1')
+  return fetch('https://facebook.github.io/react-native/movies.json')
     .then(response => response.json())
     .then(responseJson => {
       return responseJson.name;

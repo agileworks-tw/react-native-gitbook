@@ -2,7 +2,7 @@
 
 難度： 進階
 
-目標： 在 React Native 透過 fetch 使用呼叫後端 API
+目標： 在 React Native 透過 fetch 使用呼叫後端 API，並透過 Redux 管理狀態
 
 專案： [https://github.com/agileworks-tw/RN_Todo_Sample](https://github.com/agileworks-tw/RN_Todo_Sample)
 
@@ -39,6 +39,13 @@ git checkout feature/todo-list-with-api-server
 yarn
 ```
 
+### 回復修改檔案狀態
+
+```bash
+git add .
+git reset --hard HEAD
+```
+
 ### 執行專案 （依照順序執行)
 
 Run API server
@@ -62,6 +69,7 @@ adb reverse tcp:3000 tcp:3000
 ```
 
 完成後應該可以在 android 看到成功畫面
+
 ![todo-list-sample-ready](assets/todo-list-sample-ready.png)
 
 ## 參考資料

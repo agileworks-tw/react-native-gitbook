@@ -1,10 +1,11 @@
 # Flex
 
-Flexbox，就可以在不同屏幕尺寸上提供一致的佈局結構。
-雖然跟網頁 CSS 的 flex 很像，但是還是有些為的差異
-例如: flexDirection 在網頁中預設是 row，在 RN 裡面預設為 column
+Flexbox，可以在不同屏幕尺寸上提供一致的佈局結構，主要使用比例進行空間分配，能夠簡單完成置左、置中、置右、平均分散等佈局需求，是 React Native 主要使用的佈局方式。
 
-flex 後面的數字代表所佔的比例
+雖然跟網頁 CSS 的 flex 很像，但還是有些微的差異
+例如: flexDirection 在網頁中預設是 row，而在 RN 裡面預設為 column
+
+**flex 的數值代表的是所佔的比例**
 
 ```js
 <View style={{ flex: 1 }}>
@@ -12,6 +13,8 @@ flex 後面的數字代表所佔的比例
   <View style={{ flex: 1, backgroundColor: 'steelblue' }} />
 </View>
 ```
+
+在這個範例中 skyblue 與 steelblue 兩個 view 的高度比例會呈現 2 : 1，如下圖
 
 <img src="assets/flex0.png" width="auto" height="400" />
 
@@ -56,7 +59,7 @@ flex 後面的數字代表所佔的比例
 
 flex-start
 
-<img src="assets/flex-start.png" width="auto" height="400" />
+<img src="assets/flex_start.png" width="auto" height="400" />
 
 center
 

@@ -31,6 +31,13 @@ git checkout feature/async-storage
 yarn
 ```
 
+### 回復修改檔案狀態
+
+```bash
+git add .
+git reset --hard HEAD
+```
+
 ## 參考資料
 
 ### 練習解答

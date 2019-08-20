@@ -27,7 +27,7 @@
   - [6. Lab: ToDoList 整合 Redux 練習](Redux-advance/06-lab-ToDoList練習整合Redux/readme.md)
 - [手機元件操作](手機元件操作-advance/readme.md)
   - [1. 位置資訊](手機元件操作-advance/01-article-Geolocation/readme.md)
-  - [2. 位置資訊練習](手機元件操作-advance/02-lab-Geolocation/readme.md)
+  - [2. Lab:位置資訊練習](手機元件操作-advance/02-lab-Geolocation/readme.md)
   - [3. 相機相簿權限](手機元件操作-advance/03-article-Camera/readme.md)
   - [4. Lab: ToDoList 相機相簿練習](手機元件操作-advance/04-lab-Camera/readme.md)
 - [動畫及手勢操作](動畫及手勢操作-advance/readme.md)

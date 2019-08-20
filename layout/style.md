@@ -1,18 +1,19 @@
 # Style
 
 - 架構 Component 樣式的元素
+- 使用 Object 來編寫樣式屬性
 - style 等於是一個 props
 - 遵循 web 上的 css 命名
-- css 命名改為小駝峰 例如: `font-size` 在 React Native 為 `fontSize`
-- style props 可以傳入 object
-- style props 可以傳入 array ，會根據 Array 順序給予樣式的優先權
+- 駝峰式的屬性名稱，css 命名改為小駝峰
+  例如: `font-size` 在 React Native 為 `fontSize`
+- style props 可以傳入 array ，若有同屬性的樣式，後面的會蓋掉前面的
 - StyleSheet 是一個類似 CSS StyleSheets 的抽象層
-- 普通元件不支援 transform
+- 普通元件不支援 transform，需轉換成動畫元件才能使用
 
 ## StyleSheet 優點
 
 - 提高程式質量
-  - 從 render 當中的抽離 inline-style 樣式，可以使代碼更清晰易懂
+  - 從 render 當中的抽離 inline-style 樣式，可以使程式碼更清晰易懂
   - 給樣式命名對於 Component 可以提高可讀性
 - 提高性能
   - 創建樣式表，後續可以通過 ID 來引用樣式，而不是每次都創建新的對象
@@ -103,6 +104,7 @@ const styles = StyleSheet.create({
 ```
 
 ![style sample](./assets/style1.png)
+
 expo 範例: [https://snack.expo.io/r1TNAdlIf](https://snack.expo.io/r1TNAdlIf)
 
 ## 進階使用
