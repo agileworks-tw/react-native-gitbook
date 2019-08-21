@@ -86,3 +86,5 @@ const styles = StyleSheet.create({
 ```
 
 <img src="assets/text_sample.png" width="auto" height="400" />
+
+範例連結：[https://snack.expo.io/@dmoon/text-example](https://snack.expo.io/@dmoon/text-example)

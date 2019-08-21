@@ -36,6 +36,13 @@ React Native 更高效能的 ListView，用來顯示列表、重複的物件
 - 支援跳轉到指定行（ScrollToIndex）
 - 如果需要分组/類/區（section），可以使用 <SectionList> 用法雷同。
 
+```jsx
+<FlatList
+  data={[{key: 'a'}, {key: 'b'}]}
+  renderItem={({item}) => <Text>{item.key}</Text>}
+/>
+```
+
 ## Props
 
 ### data
@@ -65,7 +72,7 @@ renderIte={(item) => {
 
 ### onEndReached
 
-List 滑動到底部觸發
+傳入 callback function， callback 會在 List 滑動到底部時觸發
 
 ### onEndReachedThreshold
 
@@ -82,6 +89,10 @@ List 滑動到底部觸發
 ### ItemSeparatorComponent
 
 清單分隔線
+
+### onRefresh (下拉更新)
+
+傳入 callback function，callback 會在 List 頂部下拉清單時觸發
 
 ### refreshControl
 

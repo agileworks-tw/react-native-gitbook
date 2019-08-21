@@ -43,3 +43,15 @@ export default class ViewSample extends Component {
   }
 }
 ```
+
+## ScrollView
+
+ScrollView 是可以捲動的視圖元件，在內容高度高於裝置高度時，提供捲動功能。
+
+```jsx
+<ScrollView>
+  {/* content */}
+</ScrollView>
+```
+
+使用範例: [https://snack.expo.io/@dmoon/scrollview-sample](https://snack.expo.io/@dmoon/scrollview-sample)
