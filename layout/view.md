@@ -1,6 +1,7 @@
-# View
+# View 樣式
 
-建構 UI 的基礎元件，支持 [Flexbox](https://facebook.github.io/react-native/docs/flexbox.html) 佈局、[Style](https://facebook.github.io/react-native/docs/style.html)、一些觸摸處理、和一些無障礙功能的容器，並且它可以放到其它的視圖裡，也可以有任意多個任意類型的子視圖。不論在什麼平台上，View 都會直接對應一個平台的原生視圖，無論它是 UIView、div 還是 android.view 等等
+- 支援 [Flexbox](https://facebook.github.io/react-native/docs/flexbox.html) 佈局
+-[Style](https://facebook.github.io/react-native/docs/style.html)
 
 常用 style:
 
