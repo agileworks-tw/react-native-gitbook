@@ -1,6 +1,4 @@
-# TouchableOpacity
-
-React Native 當中拿來當作按鈕的元件
+# React Native 按鈕元件
 
 ## Button
 
@@ -8,9 +6,10 @@ React Native 當中拿來當作按鈕的元件
 - 只支援最低限度的客製化
   - title
   - color
+  - onPress
 - iOS、Android 樣式不一樣
 
-![Button Example](https://facebook.github.io/react-native/img/buttonExample.png)
+![Button Example](https://facebook.github.io/react-native/docs/assets/buttonExample.png)
 
 使用範例:
 
@@ -22,7 +21,9 @@ React Native 當中拿來當作按鈕的元件
 />
 ```
 
-## Touchable
+Button 範例：[https://snack.expo.io/@dmoon/button-example](https://snack.expo.io/@dmoon/button-example)
+
+## Touchable 元件
 
 - TouchableHighlight
   - 點擊後反黑
@@ -41,3 +42,22 @@ hitSlop = {
   right: 100
 }
 ```
+
+### TouchableOpacity
+
+是最常用的按鈕元件，含有 onPress prop 的可按視圖元件(View)，可以用來包裝想要加上按扭事件的組件
+
+props
+
+- onPress
+
+```jsx
+<TouchableOpacity onPress={this._onPressButton}>
+  <Image
+    style={styles.button}
+    source={require('./myButton.png')}
+  />
+</TouchableOpacity>
+```
+
+客製化按鈕範例:[https://snack.expo.io/@dmoon/custom-button](https://snack.expo.io/@dmoon/custom-button)

@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
 
 ![style sample](./assets/style1.png)
 
-expo 範例: [https://snack.expo.io/r1TNAdlIf](https://snack.expo.io/r1TNAdlIf)
+線上範例: [https://snack.expo.io/@dmoon/style-sample](https://snack.expo.io/@dmoon/style-sample)
 
 ## 進階使用
 
