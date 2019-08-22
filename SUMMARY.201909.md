@@ -29,6 +29,7 @@
   - [虛擬機環境教學](setup/VM_Setup.md)
   - [ESLint](setup/eslint.md)
   - [初始化專案](setup/initialize_project.md)
+  - [git 常用操作指令](setup/git.md)
 - [網路與 HTTP Request](Network/readme.md)
   - [網路環境設定](Network/setup.md)
   - [fetch HTTP request](Network/fetch.md)
