@@ -2,7 +2,6 @@
 
 ## Tabs (`<Tabs>` or `<Scene tabs>`)
 
-Can use all `props` listed above in `<Scene>` as `<Tabs>` is syntatic sugar for `<Scene tabs={true}>`.
 
 | Property                  | Type              | Default | Description                                                                     |
 | ------------------------- | ----------------- | ------- | ------------------------------------------------------------------------------- |
@@ -26,7 +25,6 @@ Can use all `props` listed above in `<Scene>` as `<Tabs>` is syntatic sugar for 
 
 ## Tab Scene (child `<Scene>` within `Tabs`)
 
-A `Scene` that is a direct child of `Tabs` and can use all `props` listed above in `Scene`,
 
 | Property      | Type        | Default     | Description                                     |
 | ------------- | ----------- | ----------- | ----------------------------------------------- |
@@ -39,8 +37,17 @@ A `Scene` that is a direct child of `Tabs` and can use all `props` listed above 
 import { Tabs, Tab } from 'react-native-router-flux';
 ...
 <Tabs>
-  <Tab />
-  <Tab />
-  <Tab />
+  <Tab icon={TabIcon} title="tab1"/>
+  <Tab icon={TabIcon} title="tab2"/>
+  <Tab icon={TabIcon} title="tab3"/>
 </Tabs>
+```
+
+`TabIcon`
+
+```js
+const TabIcon = props => 
+  <Text style={{ color: props.focused ? 'red' : 'black' }}>
+    {props.title}
+  </Text>;
 ```

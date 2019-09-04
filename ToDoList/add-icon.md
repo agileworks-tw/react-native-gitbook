@@ -1,5 +1,16 @@
 # 整合套件練習
 
+## 下載專案
+
+- ToDoList React Native Sample
+
+```bash
+cd ~/workspace
+git clone https://github.com/agileworks-tw/RN_Todo_Sample
+cd RN_Todo_Sample
+yarn
+```
+
 ## 練習目標
 
 > 切換到 `feature/todo-list-with-api-server` branch
