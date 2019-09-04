@@ -1,0 +1,1046 @@
+
+<!DOCTYPE HTML>
+<html lang="tw" >
+    <head>
+        <title>6. Lifecycle - Component 的一生 · React Natvie 課程講義 v20180806</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Marko Manninen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../components/readme.html" />
+    
+    
+    <link rel="prev" href="State.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/readme.html">
+            
+                <a href="../intro/readme.html">
+            
+                    
+                    React Native 介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    React Native 基礎介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="readme_1.html">
+            
+                <a href="readme_1.html">
+            
+                    
+                    React.JS 介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="React_Intro.html">
+            
+                <a href="React_Intro.html">
+            
+                    
+                    1. React.JS 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Virtual_DOM.html">
+            
+                <a href="Virtual_DOM.html">
+            
+                    
+                    2. 關鍵的 Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="React_Data_Flow.html">
+            
+                <a href="React_Data_Flow.html">
+            
+                    
+                    3. 資料與畫面的更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="readme_2.html">
+            
+                <a href="readme_2.html">
+            
+                    
+                    React 教學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../setup/expo-snack.html">
+            
+                <a href="../setup/expo-snack.html">
+            
+                    
+                    1. Expo Snack 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Component.html">
+            
+                <a href="Component.html">
+            
+                    
+                    2. React Component - 樂高式的 UI 組合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="JSX.html">
+            
+                <a href="JSX.html">
+            
+                    
+                    3. 好直覺的 JSX 語法糖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Props.html">
+            
+                <a href="Props.html">
+            
+                    
+                    4. Props - 傳遞資料的媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="State.html">
+            
+                <a href="State.html">
+            
+                    
+                    5. State - 動態更新的資料載體
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="Lifecycle.html">
+            
+                <a href="Lifecycle.html">
+            
+                    
+                    6. Lifecycle - Component 的一生
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../components/readme.html">
+            
+                <a href="../components/readme.html">
+            
+                    
+                    React Native 組件練習教學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    組件使用教學 - View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../layout/image.html">
+            
+                <a href="../layout/image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../layout/button.html">
+            
+                <a href="../layout/button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../components/Input_Data_Flow.html">
+            
+                <a href="../components/Input_Data_Flow.html">
+            
+                    
+                    Input 組件的資料流管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../layout/list.html">
+            
+                <a href="../layout/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../ToDoList/">
+            
+                <a href="../ToDoList/">
+            
+                    
+                    實戰練習 ToDo List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../layout/readme.html">
+            
+                <a href="../layout/readme.html">
+            
+                    
+                    樣式與排版設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../layout/style.html">
+            
+                <a href="../layout/style.html">
+            
+                    
+                    React Native Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../layout/view.html">
+            
+                <a href="../layout/view.html">
+            
+                    
+                    View 樣式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../layout/flex.html">
+            
+                <a href="../layout/flex.html">
+            
+                    
+                    Flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../layout/text.html">
+            
+                <a href="../layout/text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../ToDoList/add-style.html">
+            
+                <a href="../ToDoList/add-style.html">
+            
+                    
+                    ToDo List Style 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../setup/readme.html">
+            
+                <a href="../setup/readme.html">
+            
+                    
+                    專案環境設置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../setup/environment.html">
+            
+                <a href="../setup/environment.html">
+            
+                    
+                    一般環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../setup/VM_Setup.html">
+            
+                <a href="../setup/VM_Setup.html">
+            
+                    
+                    虛擬機環境教學
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../setup/initialize_project.html">
+            
+                <a href="../setup/initialize_project.html">
+            
+                    
+                    初始化專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../setup/eslint.html">
+            
+                <a href="../setup/eslint.html">
+            
+                    
+                    ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../setup/git.html">
+            
+                <a href="../setup/git.html">
+            
+                    
+                    git 常用操作指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Network/readme.html">
+            
+                <a href="../Network/readme.html">
+            
+                    
+                    網路與 HTTP Request
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Network/setup.html">
+            
+                <a href="../Network/setup.html">
+            
+                    
+                    網路環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Network/fetch.html">
+            
+                <a href="../Network/fetch.html">
+            
+                    
+                    fetch HTTP request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ToDoList/restful-api.html">
+            
+                <a href="../ToDoList/restful-api.html">
+            
+                    
+                    ToDo List RESTful API 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../third-party/">
+            
+                <a href="../third-party/">
+            
+                    
+                    第三方套件管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../third-party/js-module.html">
+            
+                <a href="../third-party/js-module.html">
+            
+                    
+                    JavaScript 套件管理方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../third-party/native-module.html">
+            
+                <a href="../third-party/native-module.html">
+            
+                    
+                    原生模組整合設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../ToDoList/add-icon.html">
+            
+                <a href="../ToDoList/add-icon.html">
+            
+                    
+                    整合套件練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../navigation/readme.html">
+            
+                <a href="../navigation/readme.html">
+            
+                    
+                    多畫面管理 Navigation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../navigation/">
+            
+                <a href="../navigation/">
+            
+                    
+                    介紹管理套件 RNRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../ToDoList/router.html">
+            
+                <a href="../ToDoList/router.html">
+            
+                    
+                    ToDoList 畫面管理練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../navigation/tabs.html">
+            
+                <a href="../navigation/tabs.html">
+            
+                    
+                    Tab 使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../navigation/drawer.html">
+            
+                <a href="../navigation/drawer.html">
+            
+                    
+                    Drawer 使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../async-storage/">
+            
+                <a href="../async-storage/">
+            
+                    
+                    儲存空間 AsyncStorage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../async-storage/">
+            
+                <a href="../async-storage/">
+            
+                    
+                    AsyncStorage 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../ToDoList/async-storage.html">
+            
+                <a href="../ToDoList/async-storage.html">
+            
+                    
+                    ToDo List 使用 AsyncStorage 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../release/readme.html">
+            
+                <a href="../release/readme.html">
+            
+                    
+                    生成 App 安裝檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../release/">
+            
+                <a href="../release/">
+            
+                    
+                    打包 JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../release/generate-app.html">
+            
+                <a href="../release/generate-app.html">
+            
+                    
+                    編譯專案產生 App 安裝檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6. Lifecycle - Component 的一生</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                    <div id="react/Lifecycle.md">
+                                    <h1 id="lifecycle">Lifecycle</h1>
+<blockquote>
+<p>&#x7D44;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;</p>
+</blockquote>
+<ul>
+<li>Old LifeCycle</li>
+</ul>
+<p><img src="assets/old-lifecycle.png" alt="Old LifeCycle"></p>
+<ul>
+<li>React 16.4 LifeCycle</li>
+</ul>
+<p><img src="assets/new-lifecycle.png" alt="New LifeCycle"></p>
+<p><a href="http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" target="_blank">React LifeCycle Diagram: http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/</a></p>
+<h2 id="render">render</h2>
+<ul>
+<li>&#x6BCF;&#x500B; React Component &#x90FD;&#x5FC5;&#x9700;&#x5B9A;&#x7FA9;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8CA0;&#x8CAC;&#x7E6A;&#x88FD; UI &#x7684;&#x7D50;&#x69CB;&#xFF08;Virtual DOM &#x7BC0;&#x9EDE;&#x7D50;&#x69CB;&#xFF09;</li>
+<li><p>&#x5FC5;&#x9808; return &#x50C5;&#x4E00;&#x500B; React Element&#xFF0C;&#x6240;&#x4EE5; Component &#x7D50;&#x69CB;&#x7B2C;&#x4E00;&#x5C64;&#x624D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x500B;&#x7BC0;&#x9EDE;</p>
+</li>
+<li><p>&#x6BCF;&#x6B21; Component &#x6210;&#x529F;&#x91CD;&#x7E6A;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x4E2D;&#x90FD;&#x6703;&#x88AB;&#x547C;&#x53EB;&#x5230;&#x4E26;&#x57F7;&#x884C;</p>
+</li>
+</ul>
+<h2 id="componentdidmount">componentDidMount</h2>
+<ul>
+<li>&#x5728; Component &#x521D;&#x59CB;&#x5316;&#x4E26;&#x4E14;&#x9996;&#x6B21;&#x7E6A;&#x88FD;&#x5B8C;&#x6210;&#x5BE6;&#x969B; UI &#x5F8C;&#x89F8;&#x767C;&#xFF0C;&#x91CD;&#x7E6A;&#x6642;&#x4E0D;&#x6703;&#x89F8;&#x767C;</li>
+<li>&#x5728; Component &#x7684;&#x5BE6;&#x969B; UI &#x5F9E;&#x756B;&#x9762;&#x4E2D;&#x79FB;&#x9664;&#x4E4B;&#x524D;&#xFF0C;&#x53EA;&#x6703;&#x767C;&#x751F;&#x4E00;&#x6B21;</li>
+<li>&#x901A;&#x5E38;&#x4E00;&#x4E9B;&#x9996;&#x6B21;&#x9032;&#x5165;&#x756B;&#x9762;&#x5F8C;&#x60F3;&#x767C;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x9069;&#x5408;&#x5728;&#x9019;&#x88E1;&#x547C;&#x53EB;&#xFF0C;&#x4F8B;&#x5982;&#x767C;&#x9001; HTTP Request &#x5411;&#x5F8C;&#x7AEF; API &#x8ACB;&#x6C42;&#x8CC7;&#x6599;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  componentDidMount() {
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<blockquote>
+<h4 id="&#x7DF4;&#x7FD2;&#xFF1A;-didmount-sample-httpssnackexpoiodmoondidmount-sample">&#x7DF4;&#x7FD2;&#xFF1A; DidMount Sample: <a href="https://snack.expo.io/@dmoon/didmount-sample" target="_blank">https://snack.expo.io/@dmoon/didmount-sample</a></h4>
+</blockquote>
+<h2 id="componentdidupdate">componentDidUpdate</h2>
+<blockquote>
+<p>&#x4E0D;&#x80FD;&#x5728;&#x6C92;&#x6709;&#x689D;&#x4EF6;&#x4E0B;&#x9032;&#x884C; setState&#xFF0C;&#x5426;&#x5247;&#x6703;&#x7121;&#x7AAE;&#x8FF4;&#x5708;
+&#x4E00;&#x822C;&#x6703;&#x900F;&#x904E;&#x65B0;&#x820A;&#x6BD4;&#x8F03; ( prevProps &#x8207; this.props ) &#x6216;&#x662F; ( this.props &#x8207; nextProps )&#xFF0C;state &#x6BD4;&#x8F03;&#x7570;&#x540C;&#xFF0C;&#x518D;&#x66F4;&#x65B0; state</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  componentDidUpdate(prevProps) {
+    <span class="hljs-comment">// Typical usage (don&apos;t forget to compare props):</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.props.userID !== prevProps.userID) {
+      <span class="hljs-keyword">this</span>.fetchData(<span class="hljs-keyword">this</span>.props.userID);
+    }
+  }
+}
+</code></pre>
+<h2 id="get&#xAD;derived&#xAD;state&#xAD;from&#xAD;propsnextprops-prevstate">get&#xAD;Derived&#xAD;State&#xAD;From&#xAD;Props(nextProps, prevState)</h2>
+<p>get&#xAD;Derived&#xAD;State&#xAD;From&#xAD;Props &#x4E3B;&#x8981;&#x662F;&#x5C0D;&#x6BD4;&#x5230;&#x539F;&#x5148;&#x7684; componentWillReceiveProps&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x56DE;&#x50B3;&#x4E00;&#x500B; object &#x4F86;&#x66F4;&#x65B0; state&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x66F4;&#x65B0;&#x5C31;&#x5FC5;&#x9808;&#x56DE;&#x50B3; null&#x3002;</p>
+<p>get&#xAD;Derived&#xAD;State&#xAD;From&#xAD;Props &#x5E36;&#x6709;&#x5169;&#x500B;&#x53C3;&#x6578; nextProps, prevState&#xFF0C;&#x66F4;&#x65B0;&#x5F8C;&#x7684; props&#xFF0C;&#x5148;&#x524D;&#x7684; state&#xFF0C;&#x9019;&#x500B; method &#x5728;&#x521D;&#x59CB; render &#x8ABF;&#x7528;&#xFF0C;&#x9084;&#x6709;&#x7236;&#x5143;&#x4EF6;&#x91CD;&#x65B0; render &#x6642;&#x4E5F;&#x6703;&#x8ABF;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> getDerivedStateFromProps(props, state) {
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<h2 id="getsnapshotbeforeupdate">getSnapshotBeforeUpdate</h2>
+<p>getSnapshotBeforeUpdate &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x56DE;&#x50B3;&#x503C;&#xFF0C;&#x56DE;&#x50B3;&#x7684;&#x503C;&#x80FD;&#x5920;&#x5728; componentDidUpdate &#x65B9;&#x6CD5;&#x7684;&#x53C3;&#x6578;&#x6536;&#x5230;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<p>&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScrollingList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  listRef = React.createRef();
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    <span class="hljs-comment">// Are we adding new items to the list?</span>
+    <span class="hljs-comment">// Capture the current height of the list so we can adjust scroll later.</span>
+    <span class="hljs-keyword">if</span> (prevProps.list.length &lt; <span class="hljs-keyword">this</span>.props.list.length) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.listRef.current.scrollHeight;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    <span class="hljs-comment">// If we have a snapshot value, we&apos;ve just added new items.</span>
+    <span class="hljs-comment">// Adjust scroll so these new items don&apos;t push the old ones out of view.</span>
+    <span class="hljs-keyword">if</span> (snapshot !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">this</span>.listRef.current.scrollTop +=
+        <span class="hljs-keyword">this</span>.listRef.current.scrollHeight - snapshot;
+    }
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{this.listRef}</span>&gt;</span>{/* ...contents... */}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre>
+<h2 id="react-v1690-&#x66F4;&#x65B0;">React v16.9.0 &#x66F4;&#x65B0;</h2>
+<h3 id="react-v1690-&#x5F8C;&#x5C07;&#x5BB9;&#x6613;&#x8AA4;&#x7528;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x65B9;&#x6CD5;&#x9032;&#x884C;&#x66F4;&#x540D;&#xFF0C;&#x820A;&#x7684;&#x65B9;&#x6CD5;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x6703;&#x51FA;&#x73FE;-warning">React v16.9.0 &#x5F8C;&#x5C07;&#x5BB9;&#x6613;&#x8AA4;&#x7528;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x65B9;&#x6CD5;&#x9032;&#x884C;&#x66F4;&#x540D;&#xFF0C;&#x820A;&#x7684;&#x65B9;&#x6CD5;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x6703;&#x51FA;&#x73FE; warning</h3>
+<ul>
+<li>componentWillMount &#x2192; UNSAFE_componentWillMount</li>
+<li>componentWillReceiveProps &#x2192; UNSAFE_componentWillReceiveProps</li>
+<li>componentWillUpdate &#x2192; UNSAFE_componentWillUpdate</li>
+</ul>
+<p>&#x82E5;&#x60F3;&#x77E5;&#x9053; React 16.3 &#x4E4B;&#x5F8C;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x66F4;&#x65B0;&#xFF0C;&#x53EF;&#x4EE5;&#x53C3;&#x8003; <a href="https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#migrating-from-legacy-lifecycles" target="_blank">Migrate &#x6587;&#x4EF6;&#xFF1A;https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#migrating-from-legacy-lifecycles</a>&#xFF0C;</p>
+<h4 id="&#x82E5;&#x60F3;&#x5C0D;&#x5C08;&#x6848;&#x820A;&#x6709;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x9032;&#x884C;&#x66F4;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x9019;&#x500B;&#x6307;&#x4EE4;">&#x82E5;&#x60F3;&#x5C0D;&#x5C08;&#x6848;&#x820A;&#x6709;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x9032;&#x884C;&#x66F4;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x9019;&#x500B;&#x6307;&#x4EE4;</h4>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> your_project
+npx react-codemod rename-unsafe-lifecycles
+</code></pre>
+
+                                    </div>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="State.html" class="navigation navigation-prev " aria-label="Previous page: 5. State - 動態更新的資料載體">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../components/readme.html" class="navigation navigation-next " aria-label="Next page: React Native 組件練習教學">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. Lifecycle - Component 的一生","level":"1.4.6","depth":2,"next":{"title":"React Native 組件練習教學","level":"1.5","depth":1,"path":"components/readme.md","ref":"components/readme.md","articles":[{"title":"組件使用教學 - View","level":"1.5.1","depth":2,"path":"components/index.md","ref":"components/index.md","articles":[]},{"title":"Image","level":"1.5.2","depth":2,"path":"layout/image.md","ref":"layout/image.md","articles":[]},{"title":"Button","level":"1.5.3","depth":2,"path":"layout/button.md","ref":"layout/button.md","articles":[]},{"title":"Input 組件的資料流管理","level":"1.5.4","depth":2,"path":"components/Input_Data_Flow.md","ref":"components/Input_Data_Flow.md","articles":[]},{"title":"List","level":"1.5.5","depth":2,"path":"layout/list.md","ref":"layout/list.md","articles":[]},{"title":"實戰練習 ToDo List","level":"1.5.6","depth":2,"path":"ToDoList/index.md","ref":"ToDoList/index.md","articles":[]}]},"previous":{"title":"5. State - 動態更新的資料載體","level":"1.4.5","depth":2,"path":"react/State.md","ref":"react/State.md","articles":[]},"dir":"ltr"},"config":{"totalpages":110,"plugins":["regexplace","ga"],"styles":{"website":"media/website.css","ebook":"media/ebook.css","pdf":"media/ebook.css","mobi":"media/epub.css","epub":"media/epub.css"},"pluginsConfig":{"":[{"pattern":"<!-- pagewrapper -->","flags":"g","substitute":"<div id=\"_PAGE_PATH_\">"},{"pattern":"<!-- endpagewrapper -->","flags":"g","substitute":"</div>"},{"pattern":"((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))","flags":"g","substitute":"$1","unreset":true,"store":{"substitute":"{$1}","unique":true,"lower":true,"variable_name":"uniquewords"}},{"pattern":"((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))","flags":"g","substitute":"$1","unreset":true,"store":{"substitute":"{$1}","variable_name":"allwords"}}],"regexplace":{"removeFirstPartsInSectionNumber":true,"substitutes":[{"pattern":"<!-- pagebreak -->","flags":"g","substitute":"<div class=\"page-break\"></div>"},{"pattern":"<!-- clear -->","flags":"g","substitute":"<div class=\"clear\"></div>"},{"pattern":"<!-- nopb -->","flags":"g","substitute":"<div class=\"nopb\">"},{"pattern":"<!-- endnopb -->","flags":"g","substitute":"</div>"},{"pattern":"<!-- note -->","flags":"g","substitute":"<div class=\"note\">"},{"pattern":"<!-- endnote -->","flags":"g","substitute":"</div>"},{"pattern":"!\\[(.*?)\\]\\((.*?)(?:\\s+\"(.*)\")?\\){0,}{caption=1([^\\}]*)}","flags":"gmi","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $3 alt=\"$1\" title=\"$1\" href=\"$2\"><figcaption></figcaption></figure>","decode":true},{"pattern":"<img ([^>]*) {0,}/{0,}> {0,}{caption=1([^\\}]*)}","flags":"g","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $2 $1><figcaption></figcaption></figure>","decode":true},{"pattern":"<img (.*)alt=\"([^\"]*)\"(.*) {0,1}/{0,1}><figcaption></figcaption>","flags":"g","substitute":"<img$1alt=\"$2\"$3><figcaption><span>Picture _PAGE_LEVEL_._INDEX_</span>: $2</figcaption>","store":{"substitute":"<a href=\"_PAGE_PATH_#fig_PAGE_LEVEL_._INDEX_\">Pic. _PAGE_LEVEL_._INDEX_</a> <span>$2</span>","variable_name":"pictures"}},{"pattern":"<!-- cite author=\"(.*?)\" title=\"(.*?)\" date=\"(.*?)\" location=\"(.*?)\" type=\"(.*?)\"(.*?) -->","flags":"g","substitute":"<sup><a id=\"cite_INDEX_\" href=\"/references.html#ref_PAGE_LEVEL_._INDEX_\" title=\"$1: $2 $3\" type=\"$5\">_INDEX_</a></sup>","store":{"substitute":"<span><a id=\"ref_PAGE_LEVEL_._INDEX_\" href=\"_PAGE_PATH_#cite_INDEX_\">_PAGE_LEVEL_._INDEX_.</a></span> <div type=\"$5\"><span>$1:</span> <span><a$6>$2</a></span> <span>$3</span> <span>$4</span></div>","variable_name":"citations"}},{"pattern":"<p><img(.+?){style (.+?)}</p>","flags":"g","substitute":"<p style=\"$2\"><img$1</p>","decode":true}]},"search":{},"_addcssjs":{"js":["//cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?config=TeX-AMS-MML_SVG","//code.jquery.com/jquery-2.1.4.min.js","media/jquery-mathjax-to-img.js?png=0&dlpng=0&dlsvg=0&scale=4&output=0"],"css":[]},"__addcssjs":{"js":["//code.jquery.com/jquery-2.1.4.min.js"],"css":[]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://trunk-studio.com"},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1],"copyright":"創科資訊股份有限公司 版權所有","theme":"default","keywords":"","author":"Marko Manninen","published":"07/27/2016","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"footer_title":"限碩超科技有限公司內部教育訓練使用","hidepageheaders":[1],"isbn":"","variables":{"pictures":[],"allwords":[],"uniquewords":[],"citations":[]},"title":"React Natvie 課程講義 v20180806","language":"tw","website":"http://trunk-studio.com","gitbook":"*","description":""},"file":{"path":"react/Lifecycle.md","mtime":"2019-08-27T09:43:50.483Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-04T19:22:08.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

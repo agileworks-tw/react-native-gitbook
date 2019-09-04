@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="tw" >
+    <head>
+        <title>2. React Component - 樂高式的 UI 組合 · React Natvie 課程講義 v20180806</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Marko Manninen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="JSX.html" />
+    
+    
+    <link rel="prev" href="../setup/expo-snack.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/readme.html">
+            
+                <a href="../intro/readme.html">
+            
+                    
+                    React Native 介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    React Native 基礎介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="readme_1.html">
+            
+                <a href="readme_1.html">
+            
+                    
+                    React.JS 介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="React_Intro.html">
+            
+                <a href="React_Intro.html">
+            
+                    
+                    1. React.JS 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Virtual_DOM.html">
+            
+                <a href="Virtual_DOM.html">
+            
+                    
+                    2. 關鍵的 Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="React_Data_Flow.html">
+            
+                <a href="React_Data_Flow.html">
+            
+                    
+                    3. 資料與畫面的更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="readme_2.html">
+            
+                <a href="readme_2.html">
+            
+                    
+                    React 教學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../setup/expo-snack.html">
+            
+                <a href="../setup/expo-snack.html">
+            
+                    
+                    1. Expo Snack 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="Component.html">
+            
+                <a href="Component.html">
+            
+                    
+                    2. React Component - 樂高式的 UI 組合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="JSX.html">
+            
+                <a href="JSX.html">
+            
+                    
+                    3. 好直覺的 JSX 語法糖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Props.html">
+            
+                <a href="Props.html">
+            
+                    
+                    4. Props - 傳遞資料的媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="State.html">
+            
+                <a href="State.html">
+            
+                    
+                    5. State - 動態更新的資料載體
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Lifecycle.html">
+            
+                <a href="Lifecycle.html">
+            
+                    
+                    6. Lifecycle - Component 的一生
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../components/readme.html">
+            
+                <a href="../components/readme.html">
+            
+                    
+                    React Native 組件練習教學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    組件使用教學 - View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../layout/image.html">
+            
+                <a href="../layout/image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../layout/button.html">
+            
+                <a href="../layout/button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../components/Input_Data_Flow.html">
+            
+                <a href="../components/Input_Data_Flow.html">
+            
+                    
+                    Input 組件的資料流管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../layout/list.html">
+            
+                <a href="../layout/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../ToDoList/">
+            
+                <a href="../ToDoList/">
+            
+                    
+                    實戰練習 ToDo List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../layout/readme.html">
+            
+                <a href="../layout/readme.html">
+            
+                    
+                    樣式與排版設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../layout/style.html">
+            
+                <a href="../layout/style.html">
+            
+                    
+                    React Native Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../layout/view.html">
+            
+                <a href="../layout/view.html">
+            
+                    
+                    View 樣式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../layout/flex.html">
+            
+                <a href="../layout/flex.html">
+            
+                    
+                    Flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../layout/text.html">
+            
+                <a href="../layout/text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../ToDoList/add-style.html">
+            
+                <a href="../ToDoList/add-style.html">
+            
+                    
+                    ToDo List Style 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../setup/readme.html">
+            
+                <a href="../setup/readme.html">
+            
+                    
+                    專案環境設置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../setup/environment.html">
+            
+                <a href="../setup/environment.html">
+            
+                    
+                    一般環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../setup/VM_Setup.html">
+            
+                <a href="../setup/VM_Setup.html">
+            
+                    
+                    虛擬機環境教學
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../setup/initialize_project.html">
+            
+                <a href="../setup/initialize_project.html">
+            
+                    
+                    初始化專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../setup/eslint.html">
+            
+                <a href="../setup/eslint.html">
+            
+                    
+                    ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../setup/git.html">
+            
+                <a href="../setup/git.html">
+            
+                    
+                    git 常用操作指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Network/readme.html">
+            
+                <a href="../Network/readme.html">
+            
+                    
+                    網路與 HTTP Request
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Network/setup.html">
+            
+                <a href="../Network/setup.html">
+            
+                    
+                    網路環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Network/fetch.html">
+            
+                <a href="../Network/fetch.html">
+            
+                    
+                    fetch HTTP request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ToDoList/restful-api.html">
+            
+                <a href="../ToDoList/restful-api.html">
+            
+                    
+                    ToDo List RESTful API 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../third-party/">
+            
+                <a href="../third-party/">
+            
+                    
+                    第三方套件管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../third-party/js-module.html">
+            
+                <a href="../third-party/js-module.html">
+            
+                    
+                    JavaScript 套件管理方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../third-party/native-module.html">
+            
+                <a href="../third-party/native-module.html">
+            
+                    
+                    原生模組整合設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../ToDoList/add-icon.html">
+            
+                <a href="../ToDoList/add-icon.html">
+            
+                    
+                    整合套件練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../navigation/readme.html">
+            
+                <a href="../navigation/readme.html">
+            
+                    
+                    多畫面管理 Navigation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../navigation/">
+            
+                <a href="../navigation/">
+            
+                    
+                    介紹管理套件 RNRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../ToDoList/router.html">
+            
+                <a href="../ToDoList/router.html">
+            
+                    
+                    ToDoList 畫面管理練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../navigation/tabs.html">
+            
+                <a href="../navigation/tabs.html">
+            
+                    
+                    Tab 使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../navigation/drawer.html">
+            
+                <a href="../navigation/drawer.html">
+            
+                    
+                    Drawer 使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../async-storage/">
+            
+                <a href="../async-storage/">
+            
+                    
+                    儲存空間 AsyncStorage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../async-storage/">
+            
+                <a href="../async-storage/">
+            
+                    
+                    AsyncStorage 介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../ToDoList/async-storage.html">
+            
+                <a href="../ToDoList/async-storage.html">
+            
+                    
+                    ToDo List 使用 AsyncStorage 練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../release/readme.html">
+            
+                <a href="../release/readme.html">
+            
+                    
+                    生成 App 安裝檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../release/">
+            
+                <a href="../release/">
+            
+                    
+                    打包 JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../release/generate-app.html">
+            
+                <a href="../release/generate-app.html">
+            
+                    
+                    編譯專案產生 App 安裝檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2. React Component - 樂高式的 UI 組合</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                    <div id="react/Component.md">
+                                    <h1 id="component">Component</h1>
+<ul>
+<li><p>&#x7528;&#x4F86;&#x7522;&#x751F; React Element &#x5BE6;&#x9AD4; ( Virtual DOM &#x7BC0;&#x9EDE; )</p>
+</li>
+<li><p>&#x4F7F;&#x7528; JS &#x7DE8;&#x5BEB;&#xFF0C;Component &#x672C;&#x8EAB;&#x8DB3;&#x4EE5;&#x5B8C;&#x6574;&#x8868;&#x9054;&#x5176;&#x53EF;&#x80FD;&#x7684;&#x986F;&#x793A;&#x8B8A;&#x5316;&#x548C;&#x884C;&#x70BA;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5D4C;&#x5957;&#x6216;&#x7D44;&#x5408;&#xFF0C;&#x8B93;&#x524D;&#x7AEF; UI &#x7A0B;&#x5F0F;&#x6709;&#x66F4;&#x597D;&#x7684;&#x53EF;&#x7D44;&#x5408;&#x6027;&#x8207;&#x53EF;&#x91CD;&#x7528;&#x6027;</p>
+</li>
+<li><p>&#x81EA;&#x5B9A;&#x7FA9;&#x5C01;&#x88DD;&#x8CC7;&#x6599;&#x63A5;&#x53E3;&#x53CA;&#x529F;&#x80FD;&#x63A5;&#x53E3;</p>
+</li>
+<li><p>Component Class &#x540D;&#x7A31;&#x9996;&#x5B57;&#x6BCD;&#x5FC5;&#x9808;&#x5927;&#x5BEB; ( &#x5927;&#x99DD;&#x5CF0;&#x5F0F; Upper Camel Case )</p>
+</li>
+<li><p>&#x5728;&#x5143;&#x4EF6;&#x7684; render &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;return React Element &#x4F86;&#x5448;&#x73FE; UI &#x5167;&#x5BB9;</p>
+</li>
+<li><p>&#x6BCF;&#x500B; Component &#xFF0C;render &#x4E2D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x500B;&#x6839;&#x7BC0;&#x9EDE;&#x5143;&#x7D20;</p>
+</li>
+</ul>
+<pre><code class="lang-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Text, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Welcome to React Native!<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre>
+<h2 id="component-&#x91CD;&#x7528;&#x7D44;&#x5408;">Component &#x91CD;&#x7528;&#x7D44;&#x5408;</h2>
+<pre><code class="lang-jsx"><span class="hljs-comment">// Greeting Component</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Hello {this.props.name}!<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span></span>;
+  }
+}
+</code></pre>
+<pre><code class="lang-jsx"><span class="hljs-comment">// LotsOfGreetings Component</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LotsOfGreetings</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;View style={{ alignItems: &apos;center&apos; }}&gt;
+        &lt;Greeting name=&quot;React&quot; /&gt;
+        &lt;Greeting name=&quot;Native&quot; /&gt;
+        &lt;Greeting name=&quot;JavaScript&quot; /&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre>
+<p><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/40413/images/4595448/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7_2018-02-10_%E4%B8%8A%E5%8D%886.04.35.png" alt="Component Composition Demo"></p>
+
+                                    </div>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../setup/expo-snack.html" class="navigation navigation-prev " aria-label="Previous page: 1. Expo Snack 介紹">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="JSX.html" class="navigation navigation-next " aria-label="Next page: 3. 好直覺的 JSX 語法糖">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. React Component - 樂高式的 UI 組合","level":"1.4.2","depth":2,"next":{"title":"3. 好直覺的 JSX 語法糖","level":"1.4.3","depth":2,"path":"react/JSX.md","ref":"react/JSX.md","articles":[]},"previous":{"title":"1. Expo Snack 介紹","level":"1.4.1","depth":2,"path":"setup/expo-snack.md","ref":"setup/expo-snack.md","articles":[]},"dir":"ltr"},"config":{"totalpages":110,"plugins":["regexplace","ga"],"styles":{"website":"media/website.css","ebook":"media/ebook.css","pdf":"media/ebook.css","mobi":"media/epub.css","epub":"media/epub.css"},"pluginsConfig":{"":[{"pattern":"<!-- pagewrapper -->","flags":"g","substitute":"<div id=\"_PAGE_PATH_\">"},{"pattern":"<!-- endpagewrapper -->","flags":"g","substitute":"</div>"},{"pattern":"((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))","flags":"g","substitute":"$1","unreset":true,"store":{"substitute":"{$1}","unique":true,"lower":true,"variable_name":"uniquewords"}},{"pattern":"((?!([^<]+)?>)([0-9A-Za-z\\u0080-\\u00FF'.-]?)+(?!([^{]+)?})([0-9A-Za-z\\u0080-\\u00FF'])?(?!([^&]+)?;)([0-9A-Za-z\\u0080-\\u00FF']))","flags":"g","substitute":"$1","unreset":true,"store":{"substitute":"{$1}","variable_name":"allwords"}}],"regexplace":{"removeFirstPartsInSectionNumber":true,"substitutes":[{"pattern":"<!-- pagebreak -->","flags":"g","substitute":"<div class=\"page-break\"></div>"},{"pattern":"<!-- clear -->","flags":"g","substitute":"<div class=\"clear\"></div>"},{"pattern":"<!-- nopb -->","flags":"g","substitute":"<div class=\"nopb\">"},{"pattern":"<!-- endnopb -->","flags":"g","substitute":"</div>"},{"pattern":"<!-- note -->","flags":"g","substitute":"<div class=\"note\">"},{"pattern":"<!-- endnote -->","flags":"g","substitute":"</div>"},{"pattern":"!\\[(.*?)\\]\\((.*?)(?:\\s+\"(.*)\")?\\){0,}{caption=1([^\\}]*)}","flags":"gmi","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $3 alt=\"$1\" title=\"$1\" href=\"$2\"><figcaption></figcaption></figure>","decode":true},{"pattern":"<img ([^>]*) {0,}/{0,}> {0,}{caption=1([^\\}]*)}","flags":"g","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $2 $1><figcaption></figcaption></figure>","decode":true},{"pattern":"<img (.*)alt=\"([^\"]*)\"(.*) {0,1}/{0,1}><figcaption></figcaption>","flags":"g","substitute":"<img$1alt=\"$2\"$3><figcaption><span>Picture _PAGE_LEVEL_._INDEX_</span>: $2</figcaption>","store":{"substitute":"<a href=\"_PAGE_PATH_#fig_PAGE_LEVEL_._INDEX_\">Pic. _PAGE_LEVEL_._INDEX_</a> <span>$2</span>","variable_name":"pictures"}},{"pattern":"<!-- cite author=\"(.*?)\" title=\"(.*?)\" date=\"(.*?)\" location=\"(.*?)\" type=\"(.*?)\"(.*?) -->","flags":"g","substitute":"<sup><a id=\"cite_INDEX_\" href=\"/references.html#ref_PAGE_LEVEL_._INDEX_\" title=\"$1: $2 $3\" type=\"$5\">_INDEX_</a></sup>","store":{"substitute":"<span><a id=\"ref_PAGE_LEVEL_._INDEX_\" href=\"_PAGE_PATH_#cite_INDEX_\">_PAGE_LEVEL_._INDEX_.</a></span> <div type=\"$5\"><span>$1:</span> <span><a$6>$2</a></span> <span>$3</span> <span>$4</span></div>","variable_name":"citations"}},{"pattern":"<p><img(.+?){style (.+?)}</p>","flags":"g","substitute":"<p style=\"$2\"><img$1</p>","decode":true}]},"search":{},"_addcssjs":{"js":["//cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?config=TeX-AMS-MML_SVG","//code.jquery.com/jquery-2.1.4.min.js","media/jquery-mathjax-to-img.js?png=0&dlpng=0&dlsvg=0&scale=4&output=0"],"css":[]},"__addcssjs":{"js":["//code.jquery.com/jquery-2.1.4.min.js"],"css":[]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://trunk-studio.com"},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1],"copyright":"創科資訊股份有限公司 版權所有","theme":"default","keywords":"","author":"Marko Manninen","published":"07/27/2016","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"footer_title":"限碩超科技有限公司內部教育訓練使用","hidepageheaders":[1],"isbn":"","variables":{"pictures":[],"allwords":[],"uniquewords":[],"citations":[]},"title":"React Natvie 課程講義 v20180806","language":"tw","website":"http://trunk-studio.com","gitbook":"*","description":""},"file":{"path":"react/Component.md","mtime":"2018-08-01T20:18:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-04T19:22:08.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
