@@ -27,7 +27,7 @@ MYAPP_RELEASE_KEY_PASSWORD=*****
 
 ### 3. Adding signing config to your app's gradle config
 
-編輯 `android/app/build.gradle`
+編輯 `android/app/build.gradle`
 
 ```gradle
 ...

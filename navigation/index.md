@@ -13,10 +13,6 @@
 $ yarn add react-native-router-flux
 ```
 
-## 範例專案
-
-[Example Project](https://github.com/agileworks-tw/RNRF-examples)
-
 ## Route 管理概念
 
 ### Router Stack
@@ -31,23 +27,23 @@ $ yarn add react-native-router-flux
 2.  定義 Router
     宣告 Scene 對應的 Component
 
-```javascript
-import { Router, Stack, Scene } from 'react-native-router-flux';
-/* render */
-<Router>
-  <Stack key="root">
-    <Scene key="login" component={Login} title="Login" />
-    <Scene key="register" component={Register} title="Register" />
-    <Scene key="home" component={Home} />
-  </Stack>
-</Router>;
-```
+  ```javascript
+  import { Router, Stack, Scene } from 'react-native-router-flux';
+  /* render */
+  <Router>
+    <Stack key="root">
+      <Scene key="login" component={Login} title="Login" />
+      <Scene key="register" component={Register} title="Register" />
+      <Scene key="home" component={Home} />
+    </Stack>
+  </Router>;
+  ```
 
 3.  使用 Actions 處理畫面跳轉
 
-```javascript
-Actions.sceneKey();
-```
+  ```javascript
+  Actions.sceneKey();
+  ```
 
 ### API
 
@@ -64,4 +60,5 @@ const paramData = {
   // place data here
 };
 Actions.anotherPage(paramData);
+Actions.anotherPage({ propName: 'propValue' });
 ```

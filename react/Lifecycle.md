@@ -27,7 +27,7 @@
 
 ```js
 class Example extends React.Component {
-  componentDidMount(prevProps, prevState) {
+  componentDidMount() {
     // ...
   }
 }
@@ -38,16 +38,19 @@ class Example extends React.Component {
 ## componentDidUpdate
 
 > 不能在沒有條件下進行 setState，否則會無窮迴圈
-> 一般會透過新舊比較 ( prevProps 與 this.props ) 或是 ( this.props 與 nextProps )，state 比較亦同
-> 再更新 state
+> 一般會透過新舊比較 ( prevProps 與 this.props ) 或是 ( this.props 與 nextProps )，state 比較異同，再更新 state
 
 ```js
 class Example extends React.Component {
-  componentDidUpdate(prevProps, prevState) {
-    // ...
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.userID !== prevProps.userID) {
+      this.fetchData(this.props.userID);
+    }
   }
 }
 ```
+
 
 ## get­Derived­State­From­Props(nextProps, prevState)
 

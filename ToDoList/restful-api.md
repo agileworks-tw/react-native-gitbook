@@ -72,7 +72,7 @@ adb reverse tcp:3000 tcp:3000
 
 ### API 規格
 
-- get `/api/users/ReactNative/tasks`
+- get `/api/users/ReactNative/tasks`
 
 ```text
 method: 'get'
